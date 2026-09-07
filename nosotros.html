@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nosotros | Coop San Simón</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brandGreen: '#007A33',
+            brandBrown: '#AD6433',
+            brandYellow: '#F3E600',
+            brandBg: '#F8FAFC'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-brandBg font-sans text-gray-800">
+
+  <!-- Topbar Informativa -->
+  <div class="bg-brandBrown text-white text-xs py-2 px-4 flex justify-between items-center">
+    <div>
+      <span><i class="fa-solid fa-phone mr-1"></i> Línea de atención: (601) 000-0000</span>
+      <span class="ml-4 hidden md:inline"><i class="fa-solid fa-clock mr-1"></i> Lunes a Viernes 8:00 AM - 4:00 PM</span>
+    </div>
+    <div class="flex space-x-3">
+      <a href="#" class="hover:text-brandYellow transition"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="#" class="hover:text-brandYellow transition"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#" class="hover:text-brandYellow transition"><i class="fa-brands fa-whatsapp"></i></a>
+    </div>
+  </div>
+
+  <!-- Barra de navegación principal -->
+  <header class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-20">
+      <a href="index.html" class="flex items-center space-x-2">
+        <div class="w-10 h-10 bg-brandYellow rounded-full flex items-center justify-center text-green-800 font-bold text-xl">S</div>
+        <span class="text-xl font-extrabold text-brandGreen tracking-tight">Cooperativa San Simón</span>
+      </a>
+      <nav class="hidden md:flex space-x-8 font-medium text-gray-700">
+        <a href="index.html" class="hover:text-brandBrown transition">Inicio</a>
+        <a href="servicios.html" class="hover:text-brandBrown transition">Servicios</a>
+        <a href="nosotros.html" class="text-brandGreen font-bold border-b-2 border-brandGreen pb-1">Nosotros</a>
+        <a href="contacto.html" class="hover:text-brandBrown transition">Contacto</a>
+      </nav>
+      <div class="flex space-x-3">
+        <a href="accesoPagos.html" class="bg-gray-100 text-brandBrown px-4 py-2 rounded-lg font-semibold text-sm hover:bg-gray-200 transition border flex items-center">
+          <i class="fa-solid fa-credit-card mr-2 text-brandGreen"></i> Pagos PSE
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Encabezado de Sección (Verde sólido) -->
+  <section class="bg-brandGreen text-white py-12 px-4">
+    <div class="max-w-7xl mx-auto text-center">
+      <h1 class="text-3xl md:text-4xl font-extrabold">Nuestra Cooperativa</h1>
+      <p class="text-green-50 mt-2 max-w-2xl mx-auto">Conoce nuestra esencia, los principios solidarios que nos rigen y el compromiso que tenemos con el bienestar de todos nuestros asociados.</p>
+    </div>
+  </section>
+
+  <!-- Contenido Principal de Nosotros -->
+  <main class="max-w-7xl mx-auto py-12 px-4">
+    
+    <!-- Navegación secundaria -->
+    <div class="flex justify-center space-x-2 md:space-x-4 mb-12 overflow-x-auto pb-2">
+      <button class="bg-brandGreen text-white px-6 py-2.5 rounded-full font-bold shadow text-sm whitespace-nowrap">Identidad Corporativa</button>
+      <button class="bg-white text-gray-700 hover:text-brandBrown hover:border-brandBrown px-6 py-2.5 rounded-full font-semibold border text-sm whitespace-nowrap transition">Principios y Valores</button>
+      <button class="bg-white text-gray-700 hover:text-brandBrown hover:border-brandBrown px-6 py-2.5 rounded-full font-semibold border text-sm whitespace-nowrap transition">Misión</button>
+      <button class="bg-white text-gray-700 hover:text-brandBrown hover:border-brandBrown px-6 py-2.5 rounded-full font-semibold border text-sm whitespace-nowrap transition">Visión</button>
+    </div>
+
+    <!-- Rejilla de Información Institucional -->
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      
+      <!-- Tarjeta 1: Misión -->
+        <div class="bg-white rounded-2xl shadow-sm border overflow-hidden flex flex-col justify-between hover:shadow-md hover:border-brandBrown transition">
+            <div class="p-6">
+                <div class="flex justify-between items-start mb-4">
+                    <span class="bg-orange-50 text-brandBrown text-xs font-bold px-3 py-1 rounded-full">Propósito</span>
+                    <i class="fa-solid fa-bullseye text-2xl text-brandBrown"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-2 text-gray-900">Nuestra Misión</h3>
+                <p class="text-gray-600 text-sm mb-4">Mejorar la calidad de vida de nuestros asociados y sus familias a través de soluciones financieras integrales, fomentando la cultura del ahorro y el crédito responsable.</p>
+                <ul class="text-xs text-gray-500 space-y-2 mb-6">
+                    <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Compromiso social</li>
+                    <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Crecimiento mutuo</li>
+                    <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Educación financiera</li>
+                </ul>
+            </div>
+            <div class="p-6 bg-gray-50 border-t flex items-center justify-between">
+                <span class="text-xs text-gray-500">Enfoque solidario</span>
+            </div>
+        </div>
+
+    <!-- Tarjeta 2: Valores corporativos -->
+        <div class="bg-white rounded-2xl shadow-sm border overflow-hidden flex flex-col justify-between hover:shadow-md hover:border-brandGreen transition">
+            <div class="p-6">
+                <div class="flex justify-between items-start mb-4">
+                    <span class="bg-green-50 text-brandGreen text-xs font-bold px-3 py-1 rounded-full">Esencia de la compañía</span>
+                    <i class="fa-solid fa-eye text-2xl text-brandGreen"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-2 text-gray-900">Valores corporativos</h3>
+                <p class="text-gray-600 text-sm mb-4">Ser reconocidos para el 2030 como la cooperativa líder en innovación y solidez financiera a nivel regional, destacándonos por la excelencia en el servicio.</p>
+                <ul class="text-xs text-gray-500 space-y-2 mb-6">
+                    <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Liderazgo regional</li>
+                    <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Innovación digital</li>
+                    <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Sostenibilidad</li>
+                </ul>
+            </div>
+            <div class="p-6 bg-gray-50 border-t flex items-center justify-between">
+                <span class="text-xs text-gray-500">Proyección a 2030</span>
+            </div>
+        </div>
+
+      <!-- Tarjeta 3: Visión -->
+      <div class="bg-white rounded-2xl shadow-sm border overflow-hidden flex flex-col justify-between hover:shadow-md hover:border-brandBrown transition">
+        <div class="p-6">
+          <div class="flex justify-between items-start mb-4">
+            <span class="bg-orange-50 text-brandBrown text-xs font-bold px-3 py-1 rounded-full">Futuro</span>
+            <i class="fa-solid fa-eye text-2xl text-brandBrown"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-2 text-gray-900">Nuestra Visión</h3>
+          <p class="text-gray-600 text-sm mb-4">Ser reconocidos para el 2030 como la cooperativa líder en innovación y solidez financiera a nivel regional, destacándonos por la excelencia en el servicio.</p>
+          <ul class="text-xs text-gray-500 space-y-2 mb-6">
+            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Liderazgo regional</li>
+            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Innovación digital</li>
+            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Sostenibilidad</li>
+          </ul>
+        </div>
+        <div class="p-6 bg-gray-50 border-t flex items-center justify-between">
+          <span class="text-xs text-gray-500">Proyección a 2030</span>
+        </div>
+      </div>
+
+      <!-- Tarjeta 4: Visión --> 
+      <div class="bg-white rounded-2xl shadow-sm border overflow-hidden flex flex-col justify-between hover:shadow-md hover:border-brandBrown transition">
+        <div class="p-6">
+          <div class="flex justify-between items-start mb-4">
+            <span class="bg-orange-50 text-brandBrown text-xs font-bold px-3 py-1 rounded-full">Futuro</span>
+            <i class="fa-solid fa-eye text-2xl text-brandBrown"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-2 text-gray-900">Nuestra Visión</h3>
+          <p class="text-gray-600 text-sm mb-4">Ser reconocidos para el 2030 como la cooperativa líder en innovación y solidez financiera a nivel regional, destacándonos por la excelencia en el servicio.</p>
+          <ul class="text-xs text-gray-500 space-y-2 mb-6">
+            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Liderazgo regional</li>
+            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Innovación digital</li>
+            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Sostenibilidad</li>
+          </ul>
+        </div>
+        <div class="p-6 bg-gray-50 border-t flex items-center justify-between">
+          <span class="text-xs text-gray-500">Proyección a 2030</span>
+        </div>
+      </div>
+
+      <div class="p-6">
+          <div class="flex justify-between items-start mb-4">
+            <span class="bg-orange-50 text-brandBrown text-xs font-bold px-3 py-1 rounded-full">Convenios</span>
+            <i class="fa-solid fa-shield-halved text-2xl text-brandBrown"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-2 text-gray-900">Seguros y Exequial</h3>
+          <p class="text-gray-600 text-sm mb-4">Protección integral para el grupo familiar con cobertura amplia y tarifas especiales de grupo.</p>
+          <ul class="text-xs text-gray-500 space-y-2 mb-6">
+            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Pólizas de vida y vehículos</li>
+            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Plan exequial familiar</li>
+            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Cargo directo a la cuota</li>
+          </ul>
+        </div>
+
+    </div>
+  </main>
+
+  <!-- Banner de Asesoría Personalizada (Destacado en amarillo) -->
+  <section class="bg-gray-100 border-t border-b py-12 px-4">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-2xl font-bold text-gray-900">¿Quieres ser parte de nuestra familia cooperativa?</h2>
+      <p class="text-gray-600 my-3 text-sm">Únete a Coop San Simón y empieza a disfrutar de un portafolio diseñado para tu crecimiento personal y el de tu familia.</p>
+      <a href="#" class="inline-block bg-brandYellow text-gray-900 px-8 py-3 rounded-lg font-bold hover:bg-yellow-400 transition shadow-md">
+        <i class="fa-solid fa-user-plus mr-2"></i>Afiliarme Ahora
+      </a>
+    </div>
+  </section>
+
+  
+
+</body>
+</html>
+
+
+
+
+

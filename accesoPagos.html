@@ -34,9 +34,8 @@
       <nav class="hidden md:flex space-x-8 font-medium text-gray-700">
         <a href="index.html" class="hover:text-brandBrown transition">Inicio</a>
         <a href="servicios.html" class="hover:text-brandBrown transition">Servicios</a>
-        <a href="#" class="hover:text-brandBrown transition">Nosotros</a>
-        <a href="#" class="hover:text-brandBrown transition">Educación Cooperativa</a>
-        <a href="#" class="hover:text-brandBrown transition">Contacto</a>
+        <a href="nosotros.html" class="hover:text-brandBrown transition">Nosotros</a>
+        <a href="contacto.html" class="hover:text-brandBrown transition">Contacto</a>
       </nav>
 
       <div class="flex space-x-3">
@@ -52,7 +51,7 @@
   <main class="flex-grow flex items-center justify-center px-4 py-12">
     <div class="w-full max-w-md bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden">
       
-      <!-- Encabezado del Formulario -->  ¡¡¡IMPORTANTE!!! Insertar imagen de coopsansimon o algún tipo de distintivo de pagos
+      <!-- Encabezado del Formulario -->
       <div class="bg-brandGreen text-white px-6 py-5 flex items-center space-x-3">
         <div class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center" style="background-image: url('ImagenesCoopSansimon/MiniLogoCoopsansimon.png');">    
           <i class="fa-solid fa-shield-halved text-brandYellow text-xl"></i>
@@ -70,37 +69,44 @@
       </div>
 
       <!-- Cuerpo del Formulario -->
-      <form class="p-6 space-y-5" onsubmit="event.preventDefault();">
+      <form id="form-documento" class="p-6 space-y-5">
         <div>
           <label for="documento" class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-2">
-            Número de Identificación
+          Número de Identificación
           </label>
           <div class="relative">
             <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-gray-400">
               <i class="fa-solid fa-id-card"></i>
             </div>
             <input 
-              type="text" 
-              id="documento" 
-              name="documento" 
-              placeholder="Ingrese su documento" 
-              class="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg text-sm focus:ring-2 focus:ring-brandGreen focus:border-brandGreen outline-none transition"
-              required
-            >
+            type="text" 
+            id="documento" 
+            name="documento" 
+            placeholder="Ingrese su documento" 
+            class="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg text-sm focus:ring-2 focus:ring-brandGreen focus:border-brandGreen outline-none transition invalid:border-red-500 invalid:text-red-600 focus:invalid:ring-red-500"
+            required
+            pattern="[0-9]{6,11}"
+            title="Ingrese un número de documento válido (entre 6 y 11 números, sin puntos ni espacios)">
           </div>
         </div>
 
         <div class="pt-2">
-          <a 
-            href="portalPagos.html" 
-            class="w-full bg-brandGreen text-white py-3 px-6 rounded-lg font-bold hover:bg-brandBrown transition shadow-md flex items-center justify-center space-x-2"
-          >
+          <button 
+            type="submit" 
+            class="w-full bg-brandGreen text-white py-3 px-6 rounded-lg font-bold hover:bg-brandBrown transition shadow-md flex items-center justify-center space-x-2 cursor-pointer">
             <span>Continuar</span>
             <i class="fa-solid fa-arrow-right text-sm"></i>
-          </a>
+          </button>
         </div>
       </form>
 
+      <script>
+      document.getElementById('form-documento').addEventListener('submit', function(event)
+      { 
+      event.preventDefault(); // Si el código llega aquí, es porque HTML5 ya validó que el input tiene datos correctos // Redirigimos a la página de pagos
+      window.location.href = 'portalPagos.html';
+      });
+      </script>
     </div>
   </main>
 
