@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Normativida | Cooperativa Sansimon</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brandGreen: '#007A33',
+            brandBrown: '#AD6433',
+            brandYellow: '#F3E600',
+            brandBg: '#F8FAFC'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-brandBg font-sans text-gray-800">
+
+    <!-- Topbar Informativa -->
+    <div class="bg-brandBrown text-white text-xs py-2 px-4 flex justify-between items-center">
+      <div>
+        <span><i class="fa-solid fa-phone mr-1"></i> Línea de atención: (608) 277-0800 / (608) 277-0801</span>
+        <span class="ml-4 hidden md:inline"><i class="fa-solid fa-clock mr-1"></i> Lunes a Viernes 8:30 AM - 12:00 AM / 1:00 PM - 4:00 PM</span>
+      </div>
+      <div class="flex space-x-3">
+        <a href="#" class="hover:text-brandYellow transition"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" class="hover:text-brandYellow transition"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" class="hover:text-brandYellow transition"><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+    </div>
+
+    <!-- Barra de navegación -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-20">
+
+            <!-- Logo (Verde principal) -->
+            <a href="index.html" class="flex items-center space-x-2">
+            <div class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center" style="background-image: url('ImagenesCoopSansimon/MiniLogoSuperior.png');">    
+                <i class="fa-solid fa-shield-halved text-brandYellow text-xl"></i>
+            </div>
+            <span class="text-xl font-extrabold text-brandGreen tracking-tight">Cooperativa San Simón</span>
+            </a>
+
+            <!-- Navegación Principal -->
+            <nav class="hidden md:flex space-x-8 font-medium text-gray-700 items-center">
+            <a href="index.html" class="hover:text-brandBrown transition">Inicio</a>
+            <a href="servicios.html" class="hover:text-brandBrown transition">Servicios</a>
+            <a href="normatividad.html" class="text-brandGreen font-bold border-b-2 border-brandGreen pb-1">Normatividad</a>
+            <a href="nosotros.html" class="hover:text-brandBrown transition">Nosotros</a>
+            <a href="contacto.html" class="hover:text-brandBrown transition">Contacto</a>
+            </nav>
+
+            <!-- Accesos Rápidos -->
+            <div class="flex justify-end space-x-3">
+            <a href="https://portalempresarial.redcoopcentral.com:8446/PortalEmpresarial/login?entity=00000168" target="_blank" rel="noopener noreferrer" class="bg-gray-100 text-brandBrown px-2 py-2 rounded-lg font-semibold text-xs hover:bg-gray-200 transition border flex items-center justify-center text-center">
+                <i class="fa-solid fa-briefcase mr-2 text-brandGreen"></i> Portal <br> Empresarial
+            </a>
+            <a href="https://portalnatural.redcoopcentral.com/login/00000168" target="_blank" rel="noopener noreferrer" class="bg-gray-100 text-brandBrown px-2 py-2 rounded-lg font-semibold text-xs hover:bg-gray-200 transition border flex items-center justify-center text-center">
+                <i class="fa-solid fa-wallet mr-2 text-brandGreen"></i> Portal <br> Transaccional
+            </a>
+            <a href="https://servicios3.selsacloud.com/linix/v6/890701061/loginAsociado.php?nit=890701061" target="_blank" rel="noopener noreferrer" class="bg-gray-100 text-brandBrown px-2 py-2 rounded-lg font-semibold text-xs hover:bg-gray-200 transition border flex items-center justify-center text-center">
+                <i class="fa-solid fa-desktop mr-2 text-brandGreen"></i> Sucursal <br> en línea
+            </a>
+            </div>
+          
+        </div>
+      </div>
+    </header>
+
+    <!-- Encabezado de Sección (Verde sólido) -->
+    <section class="bg-brandGreen text-white py-12 px-4">
+        <div class="max-w-7xl mx-auto text-center">
+        <h1 class="text-3xl md:text-4xl font-extrabold">Normatividad y Políticas <br> Cooperativa Sansimon</h1>
+        <p class="text-xl mt-4 max-w-2xl mx-auto">Resuelve todas tus dudas respecto a cómo opera la Cooperatvia, nuestras pólisas de tratamiento de datos, reglamentos, estatutos así como nuestros informes anuales y estados financieros.</p>
+        </div>
+    </section>
+
+    <!-- Sección Principal de Contenedores -->
+    <section class="max-w-7xl mx-auto px-4 py-16">
+        <div class="text-center mb-12">
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-900">Centro de Documentación y Normativa</h2>
+        <p class="text-gray-600 mt-2 text-sm md:text-base">Haz clic en cada categoría para desplegar la lista de archivos PDF disponibles para consulta o descarga.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- Contenedor 1: Estatutos y Reglamentos -->
+        <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 flex flex-col justify-between hover:shadow-md transition duration-300">
+            <div>
+            <div class="w-12 h-12 bg-green-50 text-brandGreen rounded-xl flex items-center justify-center mb-4 text-xl">
+                <i class="fa-solid fa-file-contract"></i>
+            </div>
+            <h3 class="text-lg font-bold text-gray-900 mb-2">Estatutos y Reglamentos</h3>
+            <p class="text-xs text-gray-600 mb-4">Normas internas y legales que guían la organización, así como la convivencia y adminitración de la Cooperativa.</p>
+            </div>
+
+            <details class="group border border-gray-200 rounded-xl overflow-hidden bg-gray-50/50">
+            <summary class="flex justify-between items-center p-3 cursor-pointer font-semibold text-xs text-brandGreen select-none hover:bg-gray-100 transition">
+                <span class="flex items-center"><i class="fa-solid fa-folder-open mr-2"></i> Ver documentos</span>
+                <i class="fa-solid fa-chevron-down text-xs transition-transform duration-300 group-open:rotate-180"></i>
+            </summary>
+            <div class="p-3 bg-white border-t border-gray-100 space-y-2 text-xs">
+                
+                <!-- Documento PDF 1 -->
+                <div class="flex items-center justify-between p-2.5 bg-gray-50 rounded-lg hover:bg-green-50 transition border border-gray-100">
+                <div class="flex items-center space-x-2.5 truncate pr-2">
+                    <i class="fa-solid fa-file-signature"></i>
+                    <span class="truncate font-medium text-gray-700">Estatutos Vigentes 2026</span>
+                </div>
+                <a href="#" target="_blank" rel="noopener noreferrer" class="bg-brandGreen text-white px-2.5 py-1 rounded text-[11px] font-semibold hover:bg-green-800 transition flex items-center flex-shrink-0">
+                    <i class="fa-solid fa-download mr-1"></i> Abrir
+                </a>
+                </div>
+
+                <!-- Documento PDF 2 -->
+                <div class="flex items-center justify-between p-2.5 bg-gray-50 rounded-lg hover:bg-green-50 transition border border-gray-100">
+                <div class="flex items-center space-x-2.5 truncate pr-2">
+                    <i class="fa-solid fa-file-pdf text-red-500 text-lg flex-shrink-0"></i>
+                    <span class="truncate font-medium text-gray-700">Reglamentación</span>
+                </div>
+                <a href="#" target="_blank" rel="noopener noreferrer" class="bg-brandGreen text-white px-2.5 py-1 rounded text-[11px] font-semibold hover:bg-green-800 transition flex items-center flex-shrink-0">
+                    <i class="fa-solid fa-download mr-1"></i> Abrir
+                </a>
+                </div>
+                <!-- Documento PDF 3 -->
+                <div class="flex items-center justify-between p-2.5 bg-gray-50 rounded-lg hover:bg-green-50 transition border border-gray-100">
+                <div class="flex items-center space-x-2.5 truncate pr-2">
+                    <i class="fa-solid fa-file-pdf text-red-500 text-lg flex-shrink-0"></i>
+                    <span class="truncate font-medium text-gray-700">Estatuto general</span>
+                </div>
+                <a href="#" target="_blank" rel="noopener noreferrer" class="bg-brandGreen text-white px-2.5 py-1 rounded text-[11px] font-semibold hover:bg-green-800 transition flex items-center flex-shrink-0">
+                    <i class="fa-solid fa-download mr-1"></i> Abrir
+                </a>
+                </div>
+            </div>
+            </details>
+        </div>
+
+        <!-- Contenedor 2: Distribución de excedentes -->
+        <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 flex flex-col justify-between hover:shadow-md transition duration-300">
+            <div>
+            <div class="w-12 h-12 bg-amber-50 text-brandBrown rounded-xl flex items-center justify-center mb-4 text-xl">
+                <i class="fa-solid fa-chart-pie"></i>
+            </div>
+            <h3 class="text-lg font-bold text-gray-900 mb-2">Distribución de excedentes</h3>
+            <p class="text-xs text-gray-600 mb-4">Informes de gestión anuales, balances de prueba y rendiciones de cuentas.</p>
+            </div>
+
+            <details class="group border border-gray-200 rounded-xl overflow-hidden bg-gray-50/50">
+            <summary class="flex justify-between items-center p-3 cursor-pointer font-semibold text-xs text-brandBrown select-none hover:bg-gray-100 transition">
+                <span class="flex items-center"><i class="fa-solid fa-folder-open mr-2"></i> Ver documentos</span>
+                <i class="fa-solid fa-chevron-down text-xs transition-transform duration-300 group-open:rotate-180"></i>
+            </summary>
+            <div class="p-3 bg-white border-t border-gray-100 space-y-2 text-xs">
+                <div class="flex items-center justify-between p-2.5 bg-gray-50 rounded-lg hover:bg-amber-50 transition border border-gray-100">
+                <div class="flex items-center space-x-2.5 truncate pr-2">
+                    <i class="fa-solid fa-file-pdf text-red-500 text-lg flex-shrink-0"></i>
+                    <span class="truncate font-medium text-gray-700">Informe de Gestión 2025</span>
+                </div>
+                <a href="documentos/informe-gestion-2025.pdf" target="_blank" class="bg-brandBrown text-white px-2.5 py-1 rounded text-[11px] font-semibold hover:bg-amber-800 transition flex items-center flex-shrink-0">
+                    <i class="fa-solid fa-download mr-1"></i> Abrir
+                </a>
+                </div>
+            </div>
+            </details>
+        </div>
+
+        <!-- Contenedor 3: Estados financieros -->
+        <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 flex flex-col justify-between hover:shadow-md transition duration-300">
+            <div>
+            <div class="w-12 h-12 bg-green-50 text-brandGreen rounded-xl flex items-center justify-center mb-4 text-xl">
+                <i class="fa-solid fa-magnifying-glass-dollar"></i> 
+            </div>
+            <h3 class="text-lg font-bold text-gray-900 mb-2">Estados financieros</h3>
+            <p class="text-xs text-gray-600 mb-4">Aquí encontrará los registros de los estados financieros de años anteriores.</p>
+            </div>
+
+            <details class="group border border-gray-200 rounded-xl overflow-hidden bg-gray-50/50">
+            <summary class="flex justify-between items-center p-3 cursor-pointer font-semibold text-xs text-brandGreen select-none hover:bg-gray-100 transition">
+                <span class="flex items-center"><i class="fa-solid fa-folder-open mr-2"></i> Ver documentos</span>
+                <i class="fa-solid fa-chevron-down text-xs transition-transform duration-300 group-open:rotate-180"></i>
+            </summary>
+            <div class="p-3 bg-white border-t border-gray-100 space-y-2 text-xs">
+                <div class="flex items-center justify-between p-2.5 bg-gray-50 rounded-lg hover:bg-green-50 transition border border-gray-100">
+                <div class="flex items-center space-x-2.5 truncate pr-2">
+                    <i class="fa-solid fa-file-pdf text-red-500 text-lg flex-shrink-0"></i>
+                    <span class="truncate font-medium text-gray-700">Estado financiero 2025</span>
+                </div>
+                <a href="#" target="_blank" rel="noopener noreferrer" class="bg-brandGreen text-white px-2.5 py-1 rounded text-[11px] font-semibold hover:bg-green-800 transition flex items-center flex-shrink-0">
+                    <i class="fa-solid fa-download mr-1"></i> Abrir
+                </a>
+                </div>
+            </div>
+            </details>
+        </div>
+
+        <!-- Contenedor 4: Informe de gestión -->
+        <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 flex flex-col justify-between hover:shadow-md transition duration-300">
+            <div>
+            <div class="w-12 h-12 bg-amber-50 text-brandBrown rounded-xl flex items-center justify-center mb-4 text-xl">
+                <i class="fa-solid fa-file-signature"></i>
+            </div>
+            <h3 class="text-lg font-bold text-gray-900 mb-2">Informe de gestión</h3>
+            <p class="text-xs text-gray-600 mb-4">Aquí encontrará los informes de gestión de nuestra Cooperativa.</p>
+            </div>
+
+            <details class="group border border-gray-200 rounded-xl overflow-hidden bg-gray-50/50">
+            <summary class="flex justify-between items-center p-3 cursor-pointer font-semibold text-xs text-brandBrown select-none hover:bg-gray-100 transition">
+                <span class="flex items-center"><i class="fa-solid fa-folder-open mr-2"></i> Ver documentos</span>
+                <i class="fa-solid fa-chevron-down text-xs transition-transform duration-300 group-open:rotate-180"></i>
+            </summary>
+            <div class="p-3 bg-white border-t border-gray-100 space-y-2 text-xs">
+                <div class="flex items-center justify-between p-2.5 bg-gray-50 rounded-lg hover:bg-amber-50 transition border border-gray-100">
+                <div class="flex items-center space-x-2.5 truncate pr-2">
+                    <i class="fa-solid fa-file-pdf text-red-500 text-lg flex-shrink-0"></i>
+                    <span class="truncate font-medium text-gray-700">Formato Solicitud Crédito</span>
+                </div>
+                <a href="#" target="_blank" rel="noopener noreferrer" class="bg-brandBrown text-white px-2.5 py-1 rounded text-[11px] font-semibold hover:bg-amber-800 transition flex items-center flex-shrink-0">
+                    <i class="fa-solid fa-download mr-1"></i> Abrir
+                </a>
+                </div>
+            </div>
+            </details>
+        </div>
+
+        <!-- Contenedor 5: Actas - Directivos -->
+        <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 flex flex-col justify-between hover:shadow-md transition duration-300">
+            <div>
+            <div class="w-12 h-12 bg-green-50 text-brandGreen rounded-xl flex items-center justify-center mb-4 text-xl">
+                <i class="fa-solid fa-users"></i>
+            </div>
+            <h3 class="text-lg font-bold text-gray-900 mb-2">Actas \ Directivos</h3>
+            <p class="text-xs text-gray-600 mb-4">Comunicados a asociados, convocatorias a asambleas y avisos de interés.</p>
+            </div>
+
+            <details class="group border border-gray-200 rounded-xl overflow-hidden bg-gray-50/50">
+            <summary class="flex justify-between items-center p-3 cursor-pointer font-semibold text-xs text-brandGreen select-none hover:bg-gray-100 transition">
+                <span class="flex items-center"><i class="fa-solid fa-folder-open mr-2"></i> Ver documentos</span>
+                <i class="fa-solid fa-chevron-down text-xs transition-transform duration-300 group-open:rotate-180"></i>
+            </summary>
+            <div class="p-3 bg-white border-t border-gray-100 space-y-2 text-xs">
+                <div class="flex items-center justify-between p-2.5 bg-gray-50 rounded-lg hover:bg-green-50 transition border border-gray-100">
+                <div class="flex items-center space-x-2.5 truncate pr-2">
+                    <i class="fa-solid fa-file-pdf text-red-500 text-lg flex-shrink-0"></i>
+                    <span class="truncate font-medium text-gray-700">Convocatoria Asamblea 2026</span>
+                </div>
+                <a href="#" target="_blank" rel="noopener noreferrer" class="bg-brandGreen text-white px-2.5 py-1 rounded text-[11px] font-semibold hover:bg-green-800 transition flex items-center flex-shrink-0">
+                    <i class="fa-solid fa-download mr-1"></i> Abrir
+                </a>
+                </div>
+            </div>
+            </details>
+        </div>
+
+        <!-- Contenedor 6: Informe de resultado balance social -->
+        <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 flex flex-col justify-between hover:shadow-md transition duration-300">
+            <div>
+            <div class="w-12 h-12 bg-amber-50 text-brandBrown rounded-xl flex items-center justify-center mb-4 text-xl">
+                <i class="fa-solid fa-receipt"></i>
+            </div>
+            <h3 class="text-lg font-bold text-gray-900 mb-2">Informe de Resultado Balance Social</h3>
+            <p class="text-xs text-gray-600 mb-4">Reglamentación de convenios comerciales, pólizas de seguro y beneficios.</p>
+            </div>
+
+            <details class="group border border-gray-200 rounded-xl overflow-hidden bg-gray-50/50">
+            <summary class="flex justify-between items-center p-3 cursor-pointer font-semibold text-xs text-brandBrown select-none hover:bg-gray-100 transition">
+                <span class="flex items-center"><i class="fa-solid fa-folder-open mr-2"></i> Ver documentos</span>
+                <i class="fa-solid fa-chevron-down text-xs transition-transform duration-300 group-open:rotate-180"></i>
+            </summary>
+            <div class="p-3 bg-white border-t border-gray-100 space-y-2 text-xs">
+                <div class="flex items-center justify-between p-2.5 bg-gray-50 rounded-lg hover:bg-amber-50 transition border border-gray-100">
+                <div class="flex items-center space-x-2.5 truncate pr-2">
+                    <i class="fa-solid fa-file-pdf text-red-500 text-lg flex-shrink-0"></i>
+                    <span class="truncate font-medium text-gray-700">Portafolio de resultados</span>
+                </div>
+                <a href="#" target="_blank" rel="noopener noreferrer" class="bg-brandBrown text-white px-2.5 py-1 rounded text-[11px] font-semibold hover:bg-amber-800 transition flex items-center flex-shrink-0">
+                    <i class="fa-solid fa-download mr-1"></i> Abrir
+                </a>
+                </div>
+            </div>
+            </details>
+        </div>
+
+        </div>
+    </section>
+
+
+    <!-- Banner de Preguntas Frecuentes (Destacado en amarillo) -->
+    <section class="bg-gray-100 border-t border-b py-12 px-4">
+        <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-2xl font-bold text-gray-900">¿Tienes dudas rápidas?</h2>
+        <p class="text-gray-600 my-3 text-sm"> Contáctanos de manera inmediata a través de WhatsApp. </p>
+        <div class="flex flex-col sm:flex-row justify-center items-center space-y-3 sm:space-y-0 sm:space-x-4 mt-6">
+            <a href="https://api.whatsapp.com/send?phone=573204372502" target="_blank" rel="noopener noreferrer" class="bg-brandYellow text-gray-900 px-6 py-2.5 rounded-lg font-bold hover:bg-yellow-400 transition shadow-md w-full sm:w-auto">
+            <i class="fa-brands fa-whatsapp mr-2"></i>Chat en Línea
+            </a>
+        </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+        <footer class="bg-gray-900 text-gray-300 py-12 border-t-4 border-brandGreen">
+        <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-4 gap-8">
+            <div>
+            <h4 class="text-brandYellow font-semibold text-xl mb-6">Cooperativa San Simón</h4>
+            <p class="text-sm text-gray-400">Vigilado Superintendencia de la Economía Solidaria. Inscrito a Fogacoop.</p>
+            </div>
+            <div>
+            <h5 class="text-brandYellow font-semibold mb-3">Accesos Rápidos</h5>
+            <ul class="space-y-2 text-sm">
+                <li><a href="#" class="hover:text-white transition">Sucursal Virtual</a></li>
+                <li><a href="#" class="hover:text-white transition">Pago PSE</a></li>
+                <li><a href="#" class="hover:text-white transition">Estatutos y Transparencia</a></li>
+            </ul>
+            </div>
+            <div>
+            <h5 class="text-brandYellow font-semibold mb-3">Servicios</h5>
+            <ul class="space-y-2 text-sm">
+                <li><a href="#" class="hover:text-white transition">Líneas de Crédito</a></li>
+                <li><a href="#" class="hover:text-white transition">CDAT / Inversión</a></li>
+                <li><a href="#" class="hover:text-white transition">Convenios y Seguros</a></li>
+            </ul>
+            </div>
+            <div>
+            <h5 class="text-brandYellow font-semibold mb-3">Contacto</h5>
+            <p class="text-sm text-gray-400 mb-1"><i class="fa-solid fa-location-dot text-brandBrown mr-2"></i>Sede Principal: Cra 2a #14a-02 B <br> Santa Librada, Ibagué, Tolima</p>
+            <p class="text-sm text-gray-400"><i class="fa-solid fa-envelope text-brandBrown mr-2"></i>contacto@coopsansimon.com</p>
+            </div>
+        </div>
+        </footer>
+
+  <!-- Botones Flotantes de Navegación -->
+    <div class="fixed bottom-6 right-6 z-50 flex flex-col space-y-3 items-end">
+
+      <!-- Botón PSE -->
+      <a href="https://www.psepagos.co/PSEHostingUI/ShowTicketOffice.aspx?ID=12274" title="Pagos PSE" 
+        class="flex items-center bg-white text-gray-800 p-2.5 rounded-full shadow-xl border border-gray-200 hover:scale-105 hover:bg-white transition-all duration-300 group">
+        <span class="max-w-0 overflow-hidden whitespace-nowrap group-hover:max-w-xs transition-all duration-300 text-xs font-bold text-gray-700 pl-1 group-hover:pr-2">
+          Pagos PSE
+        </span>
+        <img src="ImagenesCoopSansimon/logoPSE.jpg" alt="PSE" class="w-8 h-8 object-contain" onError="this.remove(); this.nextElementSibling.classList.remove('hidden');">
+        <i class="fa-solid fa-credit-card text-brandGreen text-xl hidden"></i>
+      </a>
+
+      <!-- Botón Afiliación (Ahora abre la autorización) -->
+      <button type="button" onclick="abrirModalAfiliacion()" title="Hazte Asociado" 
+        class="flex items-center bg-green-700 text-white p-3 rounded-full shadow-xl hover:scale-105 hover:bg-brandGreen transition-all duration-300 group">
+        <span class="max-w-0 overflow-hidden whitespace-nowrap group-hover:max-w-xs transition-all duration-300 text-xs font-bold pl-1 group-hover:pr-2">
+          Afíliate Aquí
+        </span>
+        <img src="ImagenesCoopSansimon/logoAfiliación.png" alt="Afiliación" class="w-6 h-6 object-contain" onError="this.remove(); this.nextElementSibling.classList.remove('hidden');">
+        <i class="fa-solid fa-user-plus text-lg hidden"></i>
+      </button>
+      
+      <!-- Modal de Tratamiento de Datos Personales -->
+      <div id="modal-afiliacion" class="fixed inset-0 bg-black/60 z-[60] hidden flex items-center justify-center p-4 backdrop-blur-sm">
+        <div class="bg-white rounded-2xl shadow-2xl max-w-md w-full p-6 relative animate-fade-in border border-gray-100">
+          <button onclick="cerrarModalAfiliacion()" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600 transition">
+            <i class="fa-solid fa-xmark text-xl"></i>
+          </button>
+          
+          <div class="text-center mb-4">
+            <div class="w-12 h-12 bg-green-100 text-brandGreen rounded-full flex items-center justify-center mx-auto mb-3 text-xl">
+              <i class="fa-solid fa-user-shield"></i>
+            </div>
+            <h3 class="text-lg font-bold text-gray-900">Tratamiento de Datos Personales</h3>
+          </div>
+          
+          <div class="text-xs text-gray-600 space-y-3 mb-5 max-h-48 overflow-y-auto p-3 bg-gray-50 rounded-lg border text-justify leading-relaxed">
+            <p>
+              En cumplimiento de la Ley 1581 de 2012 y el Decreto 1377 de 2013 de Protección de Datos Personales, la <strong>Cooperativa San Simón</strong> informa que los datos ingresados en el formulario de solicitud serán tratados con estricta confidencialidad para la validación y gestión de su afiliación.
+            </p>
+            <p>
+              Al continuar, autoriza expresamente el tratamiento de sus datos personales e información financiera para fines institucionales y de contacto comercial.
+            </p>
+          </div>
+
+          <div class="flex items-start mb-6">
+            <input id="check-habeas" type="checkbox" onchange="toggleBotonAfiliacion()" class="mt-0.5 w-4 h-4 text-brandGreen rounded border-gray-300 focus:ring-brandGreen cursor-pointer">
+            <label for="check-habeas" class="ml-2 text-xs font-medium text-gray-700 cursor-pointer select-none">
+              Acepto los términos y la política de tratamiento de datos personales.
+            </label>
+          </div>
+
+          <div class="flex gap-3">
+            <button onclick="cerrarModalAfiliacion()" class="w-1/2 py-2.5 px-4 border border-gray-300 rounded-lg text-gray-700 font-semibold text-sm hover:bg-gray-100 transition">
+              Cancelar
+            </button>
+            <a id="btn-continuar-form" 
+              href="https://docs.google.com/forms/d/e/1FAIpQLSdf4RMGmZjvE4zRiZy5c8bPbKQ_G5ijD7-v3dHf5VVi38Vwzg/viewform" 
+              target="_blank" 
+              onclick="cerrarModalAfiliacion()" 
+              class="w-1/2 py-2.5 px-4 bg-gray-300 text-gray-500 rounded-lg font-semibold text-sm text-center pointer-events-none transition cursor-not-allowed">
+              Continuar
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Botón Contacto -->
+      <a href="contacto.html" title="Contáctanos" 
+        class="flex items-center bg-brandBrown text-white p-3 rounded-full shadow-xl hover:scale-105 hover:bg-yellow-700 transition-all duration-300 group">
+        <span class="max-w-0 overflow-hidden whitespace-nowrap group-hover:max-w-xs transition-all duration-300 text-xs font-bold pl-1 group-hover:pr-2">
+          Contacto
+        </span>
+        <img src="ImagenesCoopSansimon/logoContacto.jpg" alt="Contacto" class="w-6 h-6 object-contain" onError="this.remove(); this.nextElementSibling.classList.remove('hidden');">
+        <i class="fa-solid fa-headset text-lg hidden"></i>
+      </a>
+
+    </div>
+
+    <!-- Script de control de los botones flotantes -->
+      <script>
+        function abrirModalAfiliacion() {
+          document.getElementById('modal-afiliacion').classList.remove('hidden');
+        }
+
+        function cerrarModalAfiliacion() {
+          document.getElementById('modal-afiliacion').classList.add('hidden');
+          const check = document.getElementById('check-habeas');
+          if (check) check.checked = false;
+          toggleBotonAfiliacion();
+        }
+
+        function toggleBotonAfiliacion() {
+          const check = document.getElementById('check-habeas');
+          const btn = document.getElementById('btn-continuar-form');
+          
+          if (check.checked) {
+            btn.classList.remove('bg-gray-300', 'text-gray-500', 'pointer-events-none', 'cursor-not-allowed');
+            btn.classList.add('bg-brandGreen', 'text-white', 'hover:bg-green-800');
+          } else {
+            btn.classList.add('bg-gray-300', 'text-gray-500', 'pointer-events-none', 'cursor-not-allowed');
+            btn.classList.remove('bg-brandGreen', 'text-white', 'hover:bg-green-800');
+          }
+        }
+      </script>
+
+</body>
+</html>

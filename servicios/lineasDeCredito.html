@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Servicios | Coop San Simón</title>
+  <title>LíneasDeCrédito | Cooperativa Sansimon</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
   <script>
@@ -37,25 +37,42 @@
   </div>
 
   <!-- Barra de navegación -->
-  <header class="bg-white shadow-sm sticky top-0 z-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-20">
-      <a href="index.html" class="flex items-center space-x-2">
-        <div class="w-10 h-10 bg-brandYellow rounded-full flex items-center justify-center text-green-800 font-bold text-xl">S</div>
-        <span class="text-xl font-extrabold text-brandGreen tracking-tight">Cooperativa San Simón</span>
-      </a>
-      <nav class="hidden md:flex space-x-8 font-medium text-gray-700">
-        <a href="../index.html" class="hover:text-brandBrown transition">Inicio</a>
-        <a href="../servicios.html" class="text-brandGreen font-bold border-b-2 border-brandGreen pb-1">Servicios</a>
-        <a href="../nosotros.html" class="hover:text-brandBrown transition">Nosotros</a>
-        <a href="../contacto.html" class="hover:text-brandBrown transition">Contacto</a>
-      </nav>
-      <div class="flex space-x-3">
-        <a href="../accesoPagos.html" class="bg-gray-100 text-brandBrown px-4 py-2 rounded-lg font-semibold text-sm hover:bg-gray-200 transition border flex items-center">
-          <i class="fa-solid fa-credit-card mr-2 text-brandGreen"></i> Pagos PSE
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-20">
+        <!-- Logo (Verde principal) -->
+        <a href="index.html" class="flex items-center space-x-2">
+          <div class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center" style="background-image: url(../ImagenesCoopSansimon/MiniLogoSuperior.png);">    
+            <i class="fa-solid fa-shield-halved text-brandYellow text-xl"></i>
+          </div>
+          <span class="text-xl font-extrabold text-brandGreen tracking-tight">Cooperativa San Simón</span>
         </a>
+
+        <!-- Navegación Principal -->
+        <nav class="hidden md:flex space-x-8 font-medium text-gray-700 items-center">
+          <a href="../index.html" class="hover:text-brandBrown transition">Inicio</a>
+          <a href="../servicios.html" class="text-brandGreen font-bold border-b-2 border-brandGreen pb-1">Servicios</a>
+          <a href="../normatividad.html" class="hover:text-brandBrown transition">Normatividad</a>
+          <a href="../nosotros.html" class="hover:text-brandBrown transition">Nosotros</a>
+          <a href="../contacto.html" class="hover:text-brandBrown transition">Contacto</a>
+        </nav>
+
+        <!-- Accesos Rápidos -->
+        <div class="flex justify-end space-x-3">
+          <a href="https://portalempresarial.redcoopcentral.com:8446/PortalEmpresarial/login?entity=00000168" target="_blank" rel="noopener noreferrer" class="bg-gray-100 text-brandBrown px-2 py-2 rounded-lg font-semibold text-xs hover:bg-gray-200 transition border flex items-center justify-center text-center">
+            <i class="fa-solid fa-briefcase mr-2 text-brandGreen"></i> Portal <br> Empresarial
+          </a>
+          <a href="https://portalnatural.redcoopcentral.com/login/00000168" target="_blank" rel="noopener noreferrer" class="bg-gray-100 text-brandBrown px-2 py-2 rounded-lg font-semibold text-xs hover:bg-gray-200 transition border flex items-center justify-center text-center">
+            <i class="fa-solid fa-wallet mr-2 text-brandGreen"></i> Portal <br> Transaccional
+          </a>
+          <a href="https://servicios3.selsacloud.com/linix/v6/890701061/loginAsociado.php?nit=890701061" target="_blank" rel="noopener noreferrer" class="bg-gray-100 text-brandBrown px-2 py-2 rounded-lg font-semibold text-xs hover:bg-gray-200 transition border flex items-center justify-center text-center">
+            <i class="fa-solid fa-desktop mr-2 text-brandGreen"></i> Sucursal <br> en línea
+          </a>
+        </div>
+          
+          
+        </div>
       </div>
-    </div>
-  </header>
+    </header>
 
   <!-- Encabezado de Sección (Verde sólido) -->
   <section class="bg-brandGreen text-white py-12 px-4">
@@ -81,35 +98,68 @@
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
     
       
-    <!-- Servicio 2: Ahorro programado estudiantil becario -->
-      <div class="bg-white rounded-2xl shadow-sm border overflow-hidden flex flex-col justify-between hover:shadow-md hover:border-brandBrown transition">
+  <!-- Servicio 11: Crédito vivienda -->
+      <div class="bg-white rounded-2xl shadow-sm border overflow-hidden flex flex-col justify-between hover:shadow-md hover:border-brandGreen transition">
         <div class="p-6">
           <div class="flex justify-between items-start mb-4">
-            <span class="bg-orange-50 text-brandBrown text-xs font-bold px-3 py-1 rounded-full">Ahorro programado</span>
-            <i class="fa-solid fa-chart-line text-2xl text-brandBrown"></i>
+            <span class="bg-green-50 text-brandGreen text-xs font-bold px-3 py-1 rounded-full">Crédito</span>
+            <i class="fa-solid fa-wallet text-2xl text-brandGreen"></i>
           </div>
-          <h3 class="text-xl font-bold mb-2 text-gray-900">Ahorro estudiantil becario</h3>
-          <p class="text-gray-600 text-sm mb-4">Invierte a un plazo fijo con rentabilidad garantizada y amparado por el fondo de garantías Fogacoop.</p>
+          <h3 class="text-xl font-bold mb-2 text-gray-900">Crédito vivienda</h3>
+          <p class="text-gray-600 text-sm mb-4">Liquidez inmediata para viajes, unificación de deudas o imprevistos familiares.</p>
           <ul class="text-xs text-gray-500 space-y-2 mb-6">
-            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Plazos desde 30 hasta 360 días</li>
-            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Cero costos de administración</li>
-            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Pago de intereses periódico</li>
+            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Plazo máximo hasta 72 meses</li>
+            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Descuento por nómina disponible</li>
+            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Sin sanción por prepago</li>
           </ul>
         </div>
         <div class="p-6 bg-gray-50 border-t flex items-center justify-between">
-          <span class="text-xs text-gray-500">Rentabilidad asegurada</span>
-          <a href="#" class="bg-brandBrown text-white px-4 py-2 rounded-lg text-xs font-bold hover:bg-brandGreen transition">Simular CDAT</a>
+          <span class="text-xs text-gray-500">Estudio en 24 horas</span>
+          <a href="#" class="bg-brandGreen text-white px-4 py-2 rounded-lg text-xs font-bold hover:bg-brandBrown transition">Más Información</a>
         </div>
       </div>
-      
 
+       <!-- Servicio 12: Crédito comercial -->
+      <div class="bg-white rounded-2xl shadow-sm border overflow-hidden flex flex-col justify-between hover:shadow-md hover:border-brandBrown transition">
+        <div class="p-6">
+          <div class="flex justify-between items-start mb-4">
+            <span class="bg-orange-50 text-brandBrown text-xs font-bold px-3 py-1 rounded-full">Crédito</span>
+            <i class="fa-solid fa-shield-halved text-2xl text-brandBrown"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-2 text-gray-900">Crédito comercial</h3>
+          <p class="text-gray-600 text-sm mb-4">Protección integral para el grupo familiar con cobertura amplia y tarifas especiales de grupo.</p>
+          <ul class="text-xs text-gray-500 space-y-2 mb-6">
+            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Pólizas de vida y vehículos</li>
+            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Plan exequial familiar</li>
+            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Cargo directo a la cuota</li>
+          </ul>
+        </div>
+        <div class="p-6 bg-gray-50 border-t flex items-center justify-between">
+          <span class="text-xs text-gray-500">Cobertura Nacional</span>
+          <a href="#" class="bg-brandBrown text-white px-4 py-2 rounded-lg text-xs font-bold hover:bg-brandGreen transition">Más Información</a>
+        </div>
+      </div>
 
-
-
-
-
-
-
+      <!-- Servicio 13: Crédito consumo -->
+      <div class="bg-white rounded-2xl shadow-sm border overflow-hidden flex flex-col justify-between hover:shadow-md hover:border-brandGreen transition">
+        <div class="p-6">
+          <div class="flex justify-between items-start mb-4">
+            <span class="bg-green-50 text-brandGreen text-xs font-bold px-3 py-1 rounded-full">Crédito</span>
+            <i class="fa-solid fa-wallet text-2xl text-brandGreen"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-2 text-gray-900">Crédito consumo</h3>
+          <p class="text-gray-600 text-sm mb-4">Liquidez inmediata para viajes, unificación de deudas o imprevistos familiares.</p>
+          <ul class="text-xs text-gray-500 space-y-2 mb-6">
+            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Plazo máximo hasta 72 meses</li>
+            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Descuento por nómina disponible</li>
+            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Sin sanción por prepago</li>
+          </ul>
+        </div>
+        <div class="p-6 bg-gray-50 border-t flex items-center justify-between">
+          <span class="text-xs text-gray-500">Estudio en 24 horas</span>
+          <a href="#" class="bg-brandGreen text-white px-4 py-2 rounded-lg text-xs font-bold hover:bg-brandBrown transition">Más Información</a>
+        </div>
+      </div>
 
     </div>
   </main>
@@ -119,11 +169,149 @@
     <div class="max-w-4xl mx-auto text-center">
       <h2 class="text-2xl font-bold text-gray-900">¿Necesitas asesoría para elegir la mejor opción?</h2>
       <p class="text-gray-600 my-3 text-sm">Nuestros asesores están disponibles para resolver tus dudas y orientarte en el proceso de solicitud.</p>
-      <a href="https://api.whatsapp.com/send?phone=573242694994" class="inline-block bg-brandYellow text-gray-900 px-8 py-3 rounded-lg font-bold hover:bg-yellow-400 transition shadow-md">
+      <a href="https://api.whatsapp.com/send?phone=573242694994" target="_blank" rel="noopener noreferrer" class="inline-block bg-brandYellow text-gray-900 px-8 py-3 rounded-lg font-bold hover:bg-yellow-400 transition shadow-md">
         <i class="fa-brands fa-whatsapp mr-2"></i>Hablar con un Asesor
       </a>
     </div>
   </section>
+
+  <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12 border-t-4 border-brandGreen">
+      <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-4 gap-8">
+        <div>
+          <h4 class="text-brandYellow font-semibold text-xl mb-6">Cooperativa San Simón</h4>
+          <p class="text-sm text-gray-400">Vigilado Superintendencia de la Economía Solidaria. Inscrito a Fogacoop.</p>
+        </div>
+        <div>
+          <h5 class="text-brandYellow font-semibold mb-3">Accesos Rápidos</h5>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#" class="hover:text-white transition">Sucursal Virtual</a></li>
+            <li><a href="#" class="hover:text-white transition">Pago PSE</a></li>
+            <li><a href="#" class="hover:text-white transition">Estatutos y Transparencia</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="text-brandYellow font-semibold mb-3">Servicios</h5>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#" class="hover:text-white transition">Líneas de Crédito</a></li>
+            <li><a href="#" class="hover:text-white transition">CDAT / Inversión</a></li>
+            <li><a href="#" class="hover:text-white transition">Convenios y Seguros</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="text-brandYellow font-semibold mb-3">Contacto</h5>
+          <p class="text-sm text-gray-400 mb-1"><i class="fa-solid fa-location-dot text-brandBrown mr-2"></i>Sede Principal: Cra 2a #14a-02 B <br> Santa Librada, Ibagué, Tolima</p>
+          <p class="text-sm text-gray-400"><i class="fa-solid fa-envelope text-brandBrown mr-2"></i>contacto@coopsansimon.com</p>
+        </div>
+      </div>
+    </footer>
+
+  <!-- Botones Flotantes de Navegación -->
+    <div class="fixed bottom-6 right-6 z-50 flex flex-col space-y-3 items-end">
+
+      <!-- Botón PSE -->
+      <a href="https://www.psepagos.co/PSEHostingUI/ShowTicketOffice.aspx?ID=12274" title="Pagos PSE" 
+        class="flex items-center bg-white text-gray-800 p-2.5 rounded-full shadow-xl border border-gray-200 hover:scale-105 hover:bg-white transition-all duration-300 group">
+        <span class="max-w-0 overflow-hidden whitespace-nowrap group-hover:max-w-xs transition-all duration-300 text-xs font-bold text-gray-700 pl-1 group-hover:pr-2">
+          Pagos PSE
+        </span>
+        <img src="../ImagenesCoopSansimon/logoPSE.jpg" alt="PSE" class="w-8 h-8 object-contain" onError="this.remove(); this.nextElementSibling.classList.remove('hidden');">
+        <i class="fa-solid fa-credit-card text-brandGreen text-xl hidden"></i>
+      </a>
+
+      <!-- Botón Afiliación (Ahora abre la autorización) -->
+      <button type="button" onclick="abrirModalAfiliacion()" title="Hazte Asociado" 
+        class="flex items-center bg-green-700 text-white p-3 rounded-full shadow-xl hover:scale-105 hover:bg-brandGreen transition-all duration-300 group">
+        <span class="max-w-0 overflow-hidden whitespace-nowrap group-hover:max-w-xs transition-all duration-300 text-xs font-bold pl-1 group-hover:pr-2">
+          Afíliate Aquí
+        </span>
+        <img src="../ImagenesCoopSansimon/logoAfiliación.png" alt="Afiliación" class="w-6 h-6 object-contain" onError="this.remove(); this.nextElementSibling.classList.remove('hidden');">
+        <i class="fa-solid fa-user-plus text-lg hidden"></i>
+      </button>
+      
+      <!-- Modal de Tratamiento de Datos Personales -->
+      <div id="modal-afiliacion" class="fixed inset-0 bg-black/60 z-[60] hidden flex items-center justify-center p-4 backdrop-blur-sm">
+        <div class="bg-white rounded-2xl shadow-2xl max-w-md w-full p-6 relative animate-fade-in border border-gray-100">
+          <button onclick="cerrarModalAfiliacion()" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600 transition">
+            <i class="fa-solid fa-xmark text-xl"></i>
+          </button>
+          
+          <div class="text-center mb-4">
+            <div class="w-12 h-12 bg-green-100 text-brandGreen rounded-full flex items-center justify-center mx-auto mb-3 text-xl">
+              <i class="fa-solid fa-user-shield"></i>
+            </div>
+            <h3 class="text-lg font-bold text-gray-900">Tratamiento de Datos Personales</h3>
+          </div>
+          
+          <div class="text-xs text-gray-600 space-y-3 mb-5 max-h-48 overflow-y-auto p-3 bg-gray-50 rounded-lg border text-justify leading-relaxed">
+            <p>
+              En cumplimiento de la Ley 1581 de 2012 y el Decreto 1377 de 2013 de Protección de Datos Personales, la <strong>Cooperativa San Simón</strong> informa que los datos ingresados en el formulario de solicitud serán tratados con estricta confidencialidad para la validación y gestión de su afiliación.
+            </p>
+            <p>
+              Al continuar, autoriza expresamente el tratamiento de sus datos personales e información financiera para fines institucionales y de contacto comercial.
+            </p>
+          </div>
+
+          <div class="flex items-start mb-6">
+            <input id="check-habeas" type="checkbox" onchange="toggleBotonAfiliacion()" class="mt-0.5 w-4 h-4 text-brandGreen rounded border-gray-300 focus:ring-brandGreen cursor-pointer">
+            <label for="check-habeas" class="ml-2 text-xs font-medium text-gray-700 cursor-pointer select-none">
+              Acepto los términos y la política de tratamiento de datos personales.
+            </label>
+          </div>
+
+          <div class="flex gap-3">
+            <button onclick="cerrarModalAfiliacion()" class="w-1/2 py-2.5 px-4 border border-gray-300 rounded-lg text-gray-700 font-semibold text-sm hover:bg-gray-100 transition">
+              Cancelar
+            </button>
+            <a id="btn-continuar-form" 
+              href="https://docs.google.com/forms/d/e/1FAIpQLSdf4RMGmZjvE4zRiZy5c8bPbKQ_G5ijD7-v3dHf5VVi38Vwzg/viewform" 
+              target="_blank" 
+              onclick="cerrarModalAfiliacion()" 
+              class="w-1/2 py-2.5 px-4 bg-gray-300 text-gray-500 rounded-lg font-semibold text-sm text-center pointer-events-none transition cursor-not-allowed">
+              Continuar
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Botón Contacto -->
+      <a href="../contacto.html" title="Contáctanos" 
+        class="flex items-center bg-brandBrown text-white p-3 rounded-full shadow-xl hover:scale-105 hover:bg-yellow-700 transition-all duration-300 group">
+        <span class="max-w-0 overflow-hidden whitespace-nowrap group-hover:max-w-xs transition-all duration-300 text-xs font-bold pl-1 group-hover:pr-2">
+          Contacto
+        </span>
+        <img src="../ImagenesCoopSansimon/logoContacto.jpg" alt="Contacto" class="w-6 h-6 object-contain" onError="this.remove(); this.nextElementSibling.classList.remove('hidden');">
+        <i class="fa-solid fa-headset text-lg hidden"></i>
+      </a>
+
+    </div>
+
+    <!-- Script de control de los botones flotantes -->
+      <script>
+        function abrirModalAfiliacion() {
+          document.getElementById('modal-afiliacion').classList.remove('hidden');
+        }
+
+        function cerrarModalAfiliacion() {
+          document.getElementById('modal-afiliacion').classList.add('hidden');
+          const check = document.getElementById('check-habeas');
+          if (check) check.checked = false;
+          toggleBotonAfiliacion();
+        }
+
+        function toggleBotonAfiliacion() {
+          const check = document.getElementById('check-habeas');
+          const btn = document.getElementById('btn-continuar-form');
+          
+          if (check.checked) {
+            btn.classList.remove('bg-gray-300', 'text-gray-500', 'pointer-events-none', 'cursor-not-allowed');
+            btn.classList.add('bg-brandGreen', 'text-white', 'hover:bg-green-800');
+          } else {
+            btn.classList.add('bg-gray-300', 'text-gray-500', 'pointer-events-none', 'cursor-not-allowed');
+            btn.classList.remove('bg-brandGreen', 'text-white', 'hover:bg-green-800');
+          }
+        }
+      </script>
 
 </body>
 </html>
