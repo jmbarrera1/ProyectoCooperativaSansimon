@@ -37,44 +37,41 @@
   </div>
 
   <!-- Barra de navegación -->
-    <header class="bg-white shadow-sm sticky top-0 z-50">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-20">
-        <!-- Logo (Verde principal) -->
-        <a href="index.html" class="flex items-center space-x-2">
-          <div class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center" style="background-image: url('ImagenesCoopSansimon/MiniLogoSuperior.png');">    
-            <i class="fa-solid fa-shield-halved text-brandYellow text-xl"></i>
-          </div>
-          <span class="text-xl font-extrabold text-brandGreen tracking-tight">Cooperativa San Simón</span>
+  <header class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-20">
+      <!-- Logo -->
+      <a href="index.html" class="flex items-center space-x-2">
+        <div class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center" style="background-image: url('ImagenesCoopSansimon/MiniLogoSuperior.png');">    
+          <i class="fa-solid fa-shield-halved text-brandYellow text-xl"></i>
+        </div>
+        <span class="text-xl font-extrabold text-brandGreen tracking-tight">Cooperativa San Simón</span>
+      </a>
+
+      <!-- Navegación Principal -->
+      <nav class="hidden md:flex space-x-8 font-medium text-gray-700 items-center">
+        <a href="index.html" class="hover:text-brandBrown transition">Inicio</a>
+        <a href="servicios.html" class="text-brandGreen font-bold border-b-2 border-brandGreen pb-1">Servicios</a>
+        <a href="normatividad.html" class="hover:text-brandBrown transition">Normatividad</a>
+        <a href="nosotros.html" class="hover:text-brandBrown transition">Nosotros</a>
+        <a href="contacto.html" class="hover:text-brandBrown transition">Contacto</a>
+      </nav>
+
+      <!-- Accesos Rápidos -->
+      <div class="flex justify-end space-x-3">
+        <a href="https://portalempresarial.redcoopcentral.com:8446/PortalEmpresarial/login?entity=00000168" target="_blank" rel="noopener noreferrer" class="bg-gray-100 text-brandBrown px-2 py-2 rounded-lg font-semibold text-xs hover:bg-gray-200 transition border flex items-center justify-center text-center">
+          <i class="fa-solid fa-briefcase mr-2 text-brandGreen"></i> Portal <br> Empresarial
         </a>
-
-        <!-- Navegación Principal -->
-        <nav class="hidden md:flex space-x-8 font-medium text-gray-700 items-center">
-          <a href="index.html" class="hover:text-brandBrown transition">Inicio</a>
-          <a href="servicios.html" class="text-brandGreen font-bold border-b-2 border-brandGreen pb-1">Servicios</a>
-          <a href="normatividad.html" class="hover:text-brandBrown transition">Normatividad</a>
-          <a href="nosotros.html" class="hover:text-brandBrown transition">Nosotros</a>
-          <a href="contacto.html" class="hover:text-brandBrown transition">Contacto</a>
-        </nav>
-
-        <!-- Accesos Rápidos -->
-        <div class="flex justify-end space-x-3">
-          <a href="https://portalempresarial.redcoopcentral.com:8446/PortalEmpresarial/login?entity=00000168" target="_blank" rel="noopener noreferrer" class="bg-gray-100 text-brandBrown px-2 py-2 rounded-lg font-semibold text-xs hover:bg-gray-200 transition border flex items-center justify-center text-center">
-            <i class="fa-solid fa-briefcase mr-2 text-brandGreen"></i> Portal <br> Empresarial
-          </a>
-          <a href="https://portalnatural.redcoopcentral.com/login/00000168" target="_blank" rel="noopener noreferrer" class="bg-gray-100 text-brandBrown px-2 py-2 rounded-lg font-semibold text-xs hover:bg-gray-200 transition border flex items-center justify-center text-center">
-            <i class="fa-solid fa-wallet mr-2 text-brandGreen"></i> Portal <br> Transaccional
-          </a>
-          <a href="https://servicios3.selsacloud.com/linix/v6/890701061/loginAsociado.php?nit=890701061" target="_blank" rel="noopener noreferrer" class="bg-gray-100 text-brandBrown px-2 py-2 rounded-lg font-semibold text-xs hover:bg-gray-200 transition border flex items-center justify-center text-center">
-            <i class="fa-solid fa-desktop mr-2 text-brandGreen"></i> Sucursal <br> en línea
-          </a>
-        </div>
-          
-          
-        </div>
+        <a href="https://portalnatural.redcoopcentral.com/login/00000168" target="_blank" rel="noopener noreferrer" class="bg-gray-100 text-brandBrown px-2 py-2 rounded-lg font-semibold text-xs hover:bg-gray-200 transition border flex items-center justify-center text-center">
+          <i class="fa-solid fa-wallet mr-2 text-brandGreen"></i> Portal <br> Transaccional
+        </a>
+        <a href="https://servicios3.selsacloud.com/linix/v6/890701061/loginAsociado.php?nit=890701061" target="_blank" rel="noopener noreferrer" class="bg-gray-100 text-brandBrown px-2 py-2 rounded-lg font-semibold text-xs hover:bg-gray-200 transition border flex items-center justify-center text-center">
+          <i class="fa-solid fa-desktop mr-2 text-brandGreen"></i> Sucursal <br> en línea
+        </a>
       </div>
-    </header>
+    </div>
+  </header>
 
-  <!-- Encabezado de Sección (Verde sólido) -->
+  <!-- Encabezado de Sección -->
   <section class="bg-brandGreen text-white py-12 px-4">
     <div class="max-w-7xl mx-auto text-center">
       <h1 class="text-3xl md:text-4xl font-extrabold">Portafolio de Servicios</h1>
@@ -101,103 +98,103 @@
       <div class="bg-white rounded-2xl shadow-sm border overflow-hidden flex flex-col justify-between hover:shadow-md hover:border-brandGreen transition">
         <div class="p-6">
           <div class="flex justify-between items-start mb-4">
-            <span class="bg-green-50 text-brandGreen text-xs font-bold px-3 py-1 rounded-full">Ahorro programado</span>
-            <i class="fa-solid fa-graduation-cap text-2xl text-brandGreen"></i>
+            <span class="bg-green-50 text-brandGreen text-xs font-bold px-3 py-1 rounded-full">Ahorro e Inversión</span>
+            <i class="fa-solid fa-chart-line text-2xl text-brandGreen"></i>
           </div>
           <h3 class="text-2xl font-bold mb-2 text-gray-900">CDAT Cooperativo</h3>
-          <p class="text-gray-600 text-xl mb-4">Financia tus estudios de pregrado, posgrado o el de tus beneficiarios directos con tasas preferenciales.</p>
-          <ul class=" text-gray-500 space-y-2 mb-6">
-            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Aprobación rápida</li>
-            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Plazos de 6 a 24 meses</li>
-            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Garantía según monto</li>
-          </ul>
-        </div>
-        <div class="p-6 bg-gray-50 border-t flex items-center justify-between">
-          <span class="text-xs text-gray-500">Tasa desde 1.1% Mes Vencido</span>
-          <a href="#" class="bg-brandGreen text-white px-4 py-2 rounded-lg text-xs font-bold hover:bg-brandBrown transition">Más Información</a>
-        </div>
-      </div>
-
-      <!-- Servicio 2: Ahorro programado estudiantil becario -->
-      <div class="bg-white rounded-2xl shadow-sm border overflow-hidden flex flex-col justify-between hover:shadow-md hover:border-brandBrown transition">
-        <div class="p-6">
-          <div class="flex justify-between items-start mb-4">
-            <span class="bg-orange-50 text-brandBrown text-xs font-bold px-3 py-1 rounded-full">Ahorro programado</span>
-            <i class="fa-solid fa-chart-line text-2xl text-brandBrown"></i>
-          </div>
-          <h3 class="text-xl font-bold mb-2 text-gray-900">Ahorro estudiantil becario</h3>
-          <p class="text-gray-600 text-sm mb-4">Invierte a un plazo fijo con rentabilidad garantizada y amparado por el fondo de garantías Fogacoop.</p>
-          <ul class="text-xs text-gray-500 space-y-2 mb-6">
-            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Plazos desde 30 hasta 360 días</li>
-            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Cero costos de administración</li>
-            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Pago de intereses periódico</li>
+          <p class="text-gray-600 text-xl mb-4">Invierte a plazo fijo con rentabilidad garantizada y amparado por el fondo de garantías Fogacoop.</p>
+          <ul class="text-gray-500 space-y-2 mb-6">
+            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Plazos desde 30 hasta 360 días</li>
+            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Pago de intereses periódico o al vencimiento</li>
+            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Amparado por el seguro Fogacoop</li>
           </ul>
         </div>
         <div class="p-6 bg-gray-50 border-t flex items-center justify-between">
           <span class="text-xs text-gray-500">Rentabilidad asegurada</span>
-          <a href="#" class="bg-brandBrown text-white px-4 py-2 rounded-lg text-xs font-bold hover:bg-brandGreen transition">Simular CDAT</a>
-        </div>
-      </div>
-
-      <!-- Servicio 3: Ahorrro programado estudiantil emprendedor -->
-      <div class="bg-white rounded-2xl shadow-sm border overflow-hidden flex flex-col justify-between hover:shadow-md hover:border-brandGreen transition">
-        <div class="p-6">
-          <div class="flex justify-between items-start mb-4">
-            <span class="bg-green-50 text-brandGreen text-xs font-bold px-3 py-1 rounded-full">Ahorro programado</span>
-            <i class="fa-solid fa-wallet text-2xl text-brandGreen"></i>
-          </div>
-          <h3 class="text-xl font-bold mb-2 text-gray-900">Ahorrro estudiantil emprendedor</h3>
-          <p class="text-gray-600 text-sm mb-4">Liquidez inmediata para viajes, unificación de deudas o imprevistos familiares.</p>
-          <ul class="text-xs text-gray-500 space-y-2 mb-6">
-            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Plazo máximo hasta 72 meses</li>
-            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Descuento por nómina disponible</li>
-            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Sin sanción por prepago</li>
-          </ul>
-        </div>
-        <div class="p-6 bg-gray-50 border-t flex items-center justify-between">
-          <span class="text-xs text-gray-500">Estudio en 24 horas</span>
           <a href="#" class="bg-brandGreen text-white px-4 py-2 rounded-lg text-xs font-bold hover:bg-brandBrown transition">Más Información</a>
         </div>
       </div>
 
-      <!-- Servicio 4: Ahorro programado vivienda -->
+      <!-- Servicio 2: Ahorro estudiantil becario -->
       <div class="bg-white rounded-2xl shadow-sm border overflow-hidden flex flex-col justify-between hover:shadow-md hover:border-brandBrown transition">
         <div class="p-6">
           <div class="flex justify-between items-start mb-4">
             <span class="bg-orange-50 text-brandBrown text-xs font-bold px-3 py-1 rounded-full">Ahorro programado</span>
-            <i class="fa-solid fa-shield-halved text-2xl text-brandBrown"></i>
+            <i class="fa-solid fa-graduation-cap text-2xl text-brandBrown"></i>
           </div>
-          <h3 class="text-xl font-bold mb-2 text-gray-900">Ahorro vivienda</h3>
-          <p class="text-gray-600 text-sm mb-4">Protección integral para el grupo familiar con cobertura amplia y tarifas especiales de grupo.</p>
-          <ul class="text-xs text-gray-500 space-y-2 mb-6">
-            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Pólizas de vida y vehículos</li>
-            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Plan exequial familiar</li>
-            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Cargo directo a la cuota</li>
+          <h3 class="text-2xl font-bold mb-2 text-gray-900">Ahorro estudiantil becario</h3>
+          <p class="text-gray-600 text-xl mb-4">Plan de ahorro enfocado en garantizar la educación superior de tus hijos o beneficiarios.</p>
+          <ul class="text-gray-500 space-y-2 mb-6">
+            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Cuotas mensuales programadas</li>
+            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Tasa de interés preferencial educativa</li>
+            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Incentivos por cumplimiento de metas</li>
           </ul>
         </div>
         <div class="p-6 bg-gray-50 border-t flex items-center justify-between">
-          <span class="text-xs text-gray-500">Cobertura Nacional</span>
+          <span class="text-xs text-gray-500">Plan Educativo</span>
           <a href="#" class="bg-brandBrown text-white px-4 py-2 rounded-lg text-xs font-bold hover:bg-brandGreen transition">Más Información</a>
         </div>
       </div>
 
-      <!-- Servicio 5: Ahorro programado coopeahorro soñador -->
+      <!-- Servicio 3: Ahorro estudiantil emprendedor -->
       <div class="bg-white rounded-2xl shadow-sm border overflow-hidden flex flex-col justify-between hover:shadow-md hover:border-brandGreen transition">
         <div class="p-6">
           <div class="flex justify-between items-start mb-4">
             <span class="bg-green-50 text-brandGreen text-xs font-bold px-3 py-1 rounded-full">Ahorro programado</span>
-            <i class="fa-solid fa-wallet text-2xl text-brandGreen"></i>
+            <i class="fa-solid fa-lightbulb text-2xl text-brandGreen"></i>
           </div>
-          <h3 class="text-xl font-bold mb-2 text-gray-900">Ahorro coopeahorro soñador</h3>
-          <p class="text-gray-600 text-sm mb-4">Liquidez inmediata para viajes, unificación de deudas o imprevistos familiares.</p>
-          <ul class="text-xs text-gray-500 space-y-2 mb-6">
-            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Plazo máximo hasta 72 meses</li>
-            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Descuento por nómina disponible</li>
-            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Sin sanción por prepago</li>
+          <h3 class="text-2xl font-bold mb-2 text-gray-900">Ahorro estudiantil emprendedor</h3>
+          <p class="text-gray-600 text-xl mb-4">Fomenta el espíritu emprendedor construyendo el capital inicial para tus proyectos futuros.</p>
+          <ul class="text-gray-500 space-y-2 mb-6">
+            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Ahorro periódico adaptable a tu ritmo</li>
+            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Asesoría financiera cooperativa</li>
+            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Acceso preferencial a créditos de emprendimiento</li>
           </ul>
         </div>
         <div class="p-6 bg-gray-50 border-t flex items-center justify-between">
-          <span class="text-xs text-gray-500">Estudio en 24 horas</span>
+          <span class="text-xs text-gray-500">Capital Futuro</span>
+          <a href="#" class="bg-brandGreen text-white px-4 py-2 rounded-lg text-xs font-bold hover:bg-brandBrown transition">Más Información</a>
+        </div>
+      </div>
+
+      <!-- Servicio 4: Ahorro vivienda -->
+      <div class="bg-white rounded-2xl shadow-sm border overflow-hidden flex flex-col justify-between hover:shadow-md hover:border-brandBrown transition">
+        <div class="p-6">
+          <div class="flex justify-between items-start mb-4">
+            <span class="bg-orange-50 text-brandBrown text-xs font-bold px-3 py-1 rounded-full">Ahorro programado</span>
+            <i class="fa-solid fa-house-user text-2xl text-brandBrown"></i>
+          </div>
+          <h3 class="text-2xl font-bold mb-2 text-gray-900">Ahorro vivienda</h3>
+          <p class="text-gray-600 text-xl mb-4">Construye la cuota inicial o financia la adquisición y mejora de tu hogar propio.</p>
+          <ul class="text-gray-500 space-y-2 mb-6">
+            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Planes flexibles a mediano y largo plazo</li>
+            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Facilita la postulación a subsidios</li>
+            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Excelentes rendimientos sobre tu saldo</li>
+          </ul>
+        </div>
+        <div class="p-6 bg-gray-50 border-t flex items-center justify-between">
+          <span class="text-xs text-gray-500">Tu Hogar Propio</span>
+          <a href="#" class="bg-brandBrown text-white px-4 py-2 rounded-lg text-xs font-bold hover:bg-brandGreen transition">Más Información</a>
+        </div>
+      </div>
+
+      <!-- Servicio 5: Ahorro coopeahorro soñador -->
+      <div class="bg-white rounded-2xl shadow-sm border overflow-hidden flex flex-col justify-between hover:shadow-md hover:border-brandGreen transition">
+        <div class="p-6">
+          <div class="flex justify-between items-start mb-4">
+            <span class="bg-green-50 text-brandGreen text-xs font-bold px-3 py-1 rounded-full">Ahorro programado</span>
+            <i class="fa-solid fa-cloud text-2xl text-brandGreen"></i>
+          </div>
+          <h3 class="text-2xl font-bold mb-2 text-gray-900">Ahorro coopeahorro soñador</h3>
+          <p class="text-gray-600 text-xl mb-4">Planifica y reúne los recursos necesarios para viajes, compras o metas personales.</p>
+          <ul class="text-gray-500 space-y-2 mb-6">
+            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Monto y plazo definidos por el asociado</li>
+            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Débito automático o pago por nómina</li>
+            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Entrega total al finalizar el periodo pactado</li>
+          </ul>
+        </div>
+        <div class="p-6 bg-gray-50 border-t flex items-center justify-between">
+          <span class="text-xs text-gray-500">Cumple tus Metas</span>
           <a href="#" class="bg-brandGreen text-white px-4 py-2 rounded-lg text-xs font-bold hover:bg-brandBrown transition">Más Información</a>
         </div>
       </div>
@@ -207,18 +204,18 @@
         <div class="p-6">
           <div class="flex justify-between items-start mb-4">
             <span class="bg-orange-50 text-brandBrown text-xs font-bold px-3 py-1 rounded-full">Ahorro a la vista</span>
-            <i class="fa-solid fa-shield-halved text-2xl text-brandBrown"></i>
+            <i class="fa-solid fa-piggy-bank text-2xl text-brandBrown"></i>
           </div>
-          <h3 class="text-xl font-bold mb-2 text-gray-900">Rentamás</h3>
-          <p class="text-gray-600 text-sm mb-4">Protección integral para el grupo familiar con cobertura amplia y tarifas especiales de grupo.</p>
-          <ul class="text-xs text-gray-500 space-y-2 mb-6">
-            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Pólizas de vida y vehículos</li>
-            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Plan exequial familiar</li>
-            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Cargo directo a la cuota</li>
+          <h3 class="text-2xl font-bold mb-2 text-gray-900">Rentamás</h3>
+          <p class="text-gray-600 text-xl mb-4">Cuenta de ahorro que potencia el crecimiento de tu dinero con rendimientos diarios atractivos.</p>
+          <ul class="text-gray-500 space-y-2 mb-6">
+            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Disponibilidad de dinero inmediata</li>
+            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Liquidación de intereses mensual</li>
+            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Sin cuotas ni cobros de manejo</li>
           </ul>
         </div>
         <div class="p-6 bg-gray-50 border-t flex items-center justify-between">
-          <span class="text-xs text-gray-500">Cobertura Nacional</span>
+          <span class="text-xs text-gray-500">Rentabilidad Diaria</span>
           <a href="#" class="bg-brandBrown text-white px-4 py-2 rounded-lg text-xs font-bold hover:bg-brandGreen transition">Más Información</a>
         </div>
       </div>
@@ -230,16 +227,16 @@
             <span class="bg-green-50 text-brandGreen text-xs font-bold px-3 py-1 rounded-full">Ahorro a la vista</span>
             <i class="fa-solid fa-wallet text-2xl text-brandGreen"></i>
           </div>
-          <h3 class="text-xl font-bold mb-2 text-gray-900">Renta diario</h3>
-          <p class="text-gray-600 text-sm mb-4">Liquidez inmediata para viajes, unificación de deudas o imprevistos familiares.</p>
-          <ul class="text-xs text-gray-500 space-y-2 mb-6">
-            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Plazo máximo hasta 72 meses</li>
-            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Descuento por nómina disponible</li>
-            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Sin sanción por prepago</li>
+          <h3 class="text-2xl font-bold mb-2 text-gray-900">Renta diario</h3>
+          <p class="text-gray-600 text-xl mb-4">Maneja la liquidez del día a día obteniendo retornos seguros sobre tus saldos mantenidos.</p>
+          <ul class="text-gray-500 space-y-2 mb-6">
+            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Retiros en cualquier momento</li>
+            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Cálculo de rendimientos diarios</li>
+            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Manejo seguro mediante canales digitales</li>
           </ul>
         </div>
         <div class="p-6 bg-gray-50 border-t flex items-center justify-between">
-          <span class="text-xs text-gray-500">Estudio en 24 horas</span>
+          <span class="text-xs text-gray-500">Liquidez Inmediata</span>
           <a href="#" class="bg-brandGreen text-white px-4 py-2 rounded-lg text-xs font-bold hover:bg-brandBrown transition">Más Información</a>
         </div>
       </div>
@@ -248,19 +245,19 @@
       <div class="bg-white rounded-2xl shadow-sm border overflow-hidden flex flex-col justify-between hover:shadow-md hover:border-brandBrown transition">
         <div class="p-6">
           <div class="flex justify-between items-start mb-4">
-            <span class="bg-orange-50 text-brandBrown text-xs font-bold px-3 py-1 rounded-full">Ahorro a la vista</span>
-            <i class="fa-solid fa-shield-halved text-2xl text-brandBrown"></i>
+            <span class="bg-orange-50 text-brandBrown text-xs font-bold px-3 py-1 rounded-full">Ahorro infantil</span>
+            <i class="fa-solid fa-child text-2xl text-brandBrown"></i>
           </div>
-          <h3 class="text-xl font-bold mb-2 text-gray-900">Ahorro infantil futurito</h3>
-          <p class="text-gray-600 text-sm mb-4">Protección integral para el grupo familiar con cobertura amplia y tarifas especiales de grupo.</p>
-          <ul class="text-xs text-gray-500 space-y-2 mb-6">
-            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Pólizas de vida y vehículos</li>
-            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Plan exequial familiar</li>
-            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Cargo directo a la cuota</li>
+          <h3 class="text-2xl font-bold mb-2 text-gray-900">Ahorro infantil futurito</h3>
+          <p class="text-gray-600 text-xl mb-4">Fomenta la disciplina y educación financiera en los niños desde sus primeros años de vida.</p>
+          <ul class="text-gray-500 space-y-2 mb-6">
+            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Apertura con montos muy accesibles</li>
+            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Incentivos y premios por constancia</li>
+            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Acceso a eventos infantiles cooperativos</li>
           </ul>
         </div>
         <div class="p-6 bg-gray-50 border-t flex items-center justify-between">
-          <span class="text-xs text-gray-500">Cobertura Nacional</span>
+          <span class="text-xs text-gray-500">Para los Más Pequeños</span>
           <a href="#" class="bg-brandBrown text-white px-4 py-2 rounded-lg text-xs font-bold hover:bg-brandGreen transition">Más Información</a>
         </div>
       </div>
@@ -269,19 +266,19 @@
       <div class="bg-white rounded-2xl shadow-sm border overflow-hidden flex flex-col justify-between hover:shadow-md hover:border-brandGreen transition">
         <div class="p-6">
           <div class="flex justify-between items-start mb-4">
-            <span class="bg-green-50 text-brandGreen text-xs font-bold px-3 py-1 rounded-full">Ahorro a la vista</span>
-            <i class="fa-solid fa-wallet text-2xl text-brandGreen"></i>
+            <span class="bg-green-50 text-brandGreen text-xs font-bold px-3 py-1 rounded-full">Ahorro juvenil</span>
+            <i class="fa-solid fa-user-graduate text-2xl text-brandGreen"></i>
           </div>
-          <h3 class="text-xl font-bold mb-2 text-gray-900">Ahorro juvenil especial</h3>
-          <p class="text-gray-600 text-sm mb-4">Liquidez inmediata para viajes, unificación de deudas o imprevistos familiares.</p>
-          <ul class="text-xs text-gray-500 space-y-2 mb-6">
-            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Plazo máximo hasta 72 meses</li>
-            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Descuento por nómina disponible</li>
-            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Sin sanción por prepago</li>
+          <h3 class="text-2xl font-bold mb-2 text-gray-900">Ahorro juvenil especial</h3>
+          <p class="text-gray-600 text-xl mb-4">Impulsa los proyectos académicos y de formación de jóvenes con beneficios exclusivos.</p>
+          <ul class="text-gray-500 space-y-2 mb-6">
+            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Tasa de rendimiento preferencial</li>
+            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Capacitaciones y talleres educativos</li>
+            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Acompañamiento a metas académicas</li>
           </ul>
         </div>
         <div class="p-6 bg-gray-50 border-t flex items-center justify-between">
-          <span class="text-xs text-gray-500">Estudio en 24 horas</span>
+          <span class="text-xs text-gray-500">Futuro Juvenil</span>
           <a href="#" class="bg-brandGreen text-white px-4 py-2 rounded-lg text-xs font-bold hover:bg-brandBrown transition">Más Información</a>
         </div>
       </div>
@@ -290,19 +287,19 @@
       <div class="bg-white rounded-2xl shadow-sm border overflow-hidden flex flex-col justify-between hover:shadow-md hover:border-brandBrown transition">
         <div class="p-6">
           <div class="flex justify-between items-start mb-4">
-            <span class="bg-orange-50 text-brandBrown text-xs font-bold px-3 py-1 rounded-full">Ahorro a la vista</span>
-            <i class="fa-solid fa-shield-halved text-2xl text-brandBrown"></i>
+            <span class="bg-orange-50 text-brandBrown text-xs font-bold px-3 py-1 rounded-full">Ahorro juvenil</span>
+            <i class="fa-solid fa-users text-2xl text-brandBrown"></i>
           </div>
-          <h3 class="text-xl font-bold mb-2 text-gray-900">Ahorro juvenil</h3>
-          <p class="text-gray-600 text-sm mb-4">Protección integral para el grupo familiar con cobertura amplia y tarifas especiales de grupo.</p>
-          <ul class="text-xs text-gray-500 space-y-2 mb-6">
-            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Pólizas de vida y vehículos</li>
-            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Plan exequial familiar</li>
-            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Cargo directo a la cuota</li>
+          <h3 class="text-2xl font-bold mb-2 text-gray-900">Ahorro juvenil</h3>
+          <p class="text-gray-600 text-xl mb-4">Acompañamiento financiero integral diseñado para acompañar la juventud cooperativa.</p>
+          <ul class="text-gray-500 space-y-2 mb-6">
+            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Sin costos de mantenimiento</li>
+            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Facilidad para depósitos periódicos</li>
+            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Participación activa en programas juveniles</li>
           </ul>
         </div>
         <div class="p-6 bg-gray-50 border-t flex items-center justify-between">
-          <span class="text-xs text-gray-500">Cobertura Nacional</span>
+          <span class="text-xs text-gray-500">Acompañamiento Joven</span>
           <a href="#" class="bg-brandBrown text-white px-4 py-2 rounded-lg text-xs font-bold hover:bg-brandGreen transition">Más Información</a>
         </div>
       </div>
@@ -312,18 +309,18 @@
         <div class="p-6">
           <div class="flex justify-between items-start mb-4">
             <span class="bg-green-50 text-brandGreen text-xs font-bold px-3 py-1 rounded-full">Crédito</span>
-            <i class="fa-solid fa-wallet text-2xl text-brandGreen"></i>
+            <i class="fa-solid fa-house-circle-check text-2xl text-brandGreen"></i>
           </div>
-          <h3 class="text-xl font-bold mb-2 text-gray-900">Crédito vivienda</h3>
-          <p class="text-gray-600 text-sm mb-4">Liquidez inmediata para viajes, unificación de deudas o imprevistos familiares.</p>
-          <ul class="text-xs text-gray-500 space-y-2 mb-6">
-            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Plazo máximo hasta 72 meses</li>
-            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Descuento por nómina disponible</li>
-            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Sin sanción por prepago</li>
+          <h3 class="text-2xl font-bold mb-2 text-gray-900">Crédito vivienda</h3>
+          <p class="text-gray-600 text-xl mb-4">Financiación ágil para la compra, construcción o mejoramiento de tu patrimonio inmobiliario.</p>
+          <ul class="text-gray-500 space-y-2 mb-6">
+            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Amplios plazos de amortización</li>
+            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Tasas de interés competitivas</li>
+            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Estudio y aprobación oportuna</li>
           </ul>
         </div>
         <div class="p-6 bg-gray-50 border-t flex items-center justify-between">
-          <span class="text-xs text-gray-500">Estudio en 24 horas</span>
+          <span class="text-xs text-gray-500">Patrimonio Familiar</span>
           <a href="#" class="bg-brandGreen text-white px-4 py-2 rounded-lg text-xs font-bold hover:bg-brandBrown transition">Más Información</a>
         </div>
       </div>
@@ -333,18 +330,18 @@
         <div class="p-6">
           <div class="flex justify-between items-start mb-4">
             <span class="bg-orange-50 text-brandBrown text-xs font-bold px-3 py-1 rounded-full">Crédito</span>
-            <i class="fa-solid fa-shield-halved text-2xl text-brandBrown"></i>
+            <i class="fa-solid fa-briefcase text-2xl text-brandBrown"></i>
           </div>
-          <h3 class="text-xl font-bold mb-2 text-gray-900">Crédito comercial</h3>
-          <p class="text-gray-600 text-sm mb-4">Protección integral para el grupo familiar con cobertura amplia y tarifas especiales de grupo.</p>
-          <ul class="text-xs text-gray-500 space-y-2 mb-6">
-            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Pólizas de vida y vehículos</li>
-            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Plan exequial familiar</li>
-            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Cargo directo a la cuota</li>
+          <h3 class="text-2xl font-bold mb-2 text-gray-900">Crédito comercial</h3>
+          <p class="text-gray-600 text-xl mb-4">Financia capital de trabajo, inventarios o activos fijos para fortalecer tu negocio o empresa.</p>
+          <ul class="text-gray-500 space-y-2 mb-6">
+            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Montos adaptados a tu actividad económica</li>
+            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Esquemas de pago flexibles</li>
+            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Asesoría técnica y personalizada</li>
           </ul>
         </div>
         <div class="p-6 bg-gray-50 border-t flex items-center justify-between">
-          <span class="text-xs text-gray-500">Cobertura Nacional</span>
+          <span class="text-xs text-gray-500">Impulso Empresarial</span>
           <a href="#" class="bg-brandBrown text-white px-4 py-2 rounded-lg text-xs font-bold hover:bg-brandGreen transition">Más Información</a>
         </div>
       </div>
@@ -354,18 +351,18 @@
         <div class="p-6">
           <div class="flex justify-between items-start mb-4">
             <span class="bg-green-50 text-brandGreen text-xs font-bold px-3 py-1 rounded-full">Crédito</span>
-            <i class="fa-solid fa-wallet text-2xl text-brandGreen"></i>
+            <i class="fa-solid fa-cart-shopping text-2xl text-brandGreen"></i>
           </div>
-          <h3 class="text-xl font-bold mb-2 text-gray-900">Crédito consumo</h3>
-          <p class="text-gray-600 text-sm mb-4">Liquidez inmediata para viajes, unificación de deudas o imprevistos familiares.</p>
-          <ul class="text-xs text-gray-500 space-y-2 mb-6">
-            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Plazo máximo hasta 72 meses</li>
-            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Descuento por nómina disponible</li>
-            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Sin sanción por prepago</li>
+          <h3 class="text-2xl font-bold mb-2 text-gray-900">Crédito consumo</h3>
+          <p class="text-gray-600 text-xl mb-4">Solución financiera para gastos personales, viajes, unificación de deudas o imprevistos.</p>
+          <ul class="text-gray-500 space-y-2 mb-6">
+            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Plazos cómodos hasta 72 meses</li>
+            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Opción de descuento por nómina</li>
+            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Sin penalización por pagos anticipados</li>
           </ul>
         </div>
         <div class="p-6 bg-gray-50 border-t flex items-center justify-between">
-          <span class="text-xs text-gray-500">Estudio en 24 horas</span>
+          <span class="text-xs text-gray-500">Libre Inversión</span>
           <a href="#" class="bg-brandGreen text-white px-4 py-2 rounded-lg text-xs font-bold hover:bg-brandBrown transition">Más Información</a>
         </div>
       </div>
@@ -375,18 +372,18 @@
         <div class="p-6">
           <div class="flex justify-between items-start mb-4">
             <span class="bg-orange-50 text-brandBrown text-xs font-bold px-3 py-1 rounded-full">Turismo y recreación</span>
-            <i class="fa-solid fa-shield-halved text-2xl text-brandBrown"></i>
+            <i class="fa-solid fa-umbrella-beach text-2xl text-brandBrown"></i>
           </div>
-          <h3 class="text-xl font-bold mb-2 text-gray-900">Cooperación y esparcimiento</h3>
-          <p class="text-gray-600 text-sm mb-4">Protección integral para el grupo familiar con cobertura amplia y tarifas especiales de grupo.</p>
-          <ul class="text-xs text-gray-500 space-y-2 mb-6">
-            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Pólizas de vida y vehículos</li>
-            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Plan exequial familiar</li>
-            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Cargo directo a la cuota</li>
+          <h3 class="text-2xl font-bold mb-2 text-gray-900">Cooperación y esparcimiento</h3>
+          <p class="text-gray-600 text-xl mb-4">Programas integrales de recreación, sano descanso e integración para el asociado y su familia.</p>
+          <ul class="text-gray-500 space-y-2 mb-6">
+            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Descuentos en centros recreativos</li>
+            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Jornadas deportivas y comunitarias</li>
+            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Tarifas preferenciales subsidiadas</li>
           </ul>
         </div>
         <div class="p-6 bg-gray-50 border-t flex items-center justify-between">
-          <span class="text-xs text-gray-500">Cobertura Nacional</span>
+          <span class="text-xs text-gray-500">Bienestar Familiar</span>
           <a href="#" class="bg-brandBrown text-white px-4 py-2 rounded-lg text-xs font-bold hover:bg-brandGreen transition">Más Información</a>
         </div>
       </div>
@@ -396,18 +393,18 @@
         <div class="p-6">
           <div class="flex justify-between items-start mb-4">
             <span class="bg-green-50 text-brandGreen text-xs font-bold px-3 py-1 rounded-full">Turismo</span>
-            <i class="fa-solid fa-wallet text-2xl text-brandGreen"></i>
+            <i class="fa-solid fa-plane text-2xl text-brandGreen"></i>
           </div>
-          <h3 class="text-xl font-bold mb-2 text-gray-900">Viajes nacionales e internacionales</h3>
-          <p class="text-gray-600 text-sm mb-4">Liquidez inmediata para viajes, unificación de deudas o imprevistos familiares.</p>
-          <ul class="text-xs text-gray-500 space-y-2 mb-6">
-            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Plazo máximo hasta 72 meses</li>
-            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Descuento por nómina disponible</li>
-            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Sin sanción por prepago</li>
+          <h3 class="text-2xl font-bold mb-2 text-gray-900">Viajes nacionales e internacionales</h3>
+          <p class="text-gray-600 text-xl mb-4">Planes turísticos financiados para conocer los mejores destinos nacionales e internacionales.</p>
+          <ul class="text-gray-500 space-y-2 mb-6">
+            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Financiación con cuotas moderadas</li>
+            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Paquetes turísticos todo incluido</li>
+            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Asistencia y seguro de viaje</li>
           </ul>
         </div>
         <div class="p-6 bg-gray-50 border-t flex items-center justify-between">
-          <span class="text-xs text-gray-500">Estudio en 24 horas</span>
+          <span class="text-xs text-gray-500">Planes Turísticos</span>
           <a href="#" class="bg-brandGreen text-white px-4 py-2 rounded-lg text-xs font-bold hover:bg-brandBrown transition">Más Información</a>
         </div>
       </div>
@@ -417,18 +414,18 @@
         <div class="p-6">
           <div class="flex justify-between items-start mb-4">
             <span class="bg-orange-50 text-brandBrown text-xs font-bold px-3 py-1 rounded-full">Recreación</span>
-            <i class="fa-solid fa-shield-halved text-2xl text-brandBrown"></i>
+            <i class="fa-solid fa-champagne-glasses text-2xl text-brandBrown"></i>
           </div>
-          <h3 class="text-xl font-bold mb-2 text-gray-900">Eventos sociales institucionales</h3>
-          <p class="text-gray-600 text-sm mb-4">Protección integral para el grupo familiar con cobertura amplia y tarifas especiales de grupo.</p>
-          <ul class="text-xs text-gray-500 space-y-2 mb-6">
-            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Pólizas de vida y vehículos</li>
-            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Plan exequial familiar</li>
-            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Cargo directo a la cuota</li>
+          <h3 class="text-2xl font-bold mb-2 text-gray-900">Eventos sociales institucionales</h3>
+          <p class="text-gray-600 text-xl mb-4">Encuentros y celebraciones comunitarias diseñadas para afianzar lazos de cooperación y solidaridad.</p>
+          <ul class="text-gray-500 space-y-2 mb-6">
+            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Asambleas e integraciones anuales</li>
+            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Celebraciones conmemorativas</li>
+            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Espacios culturales para el asociado</li>
           </ul>
         </div>
         <div class="p-6 bg-gray-50 border-t flex items-center justify-between">
-          <span class="text-xs text-gray-500">Cobertura Nacional</span>
+          <span class="text-xs text-gray-500">Integración Social</span>
           <a href="#" class="bg-brandBrown text-white px-4 py-2 rounded-lg text-xs font-bold hover:bg-brandGreen transition">Más Información</a>
         </div>
       </div>
@@ -438,18 +435,18 @@
         <div class="p-6">
           <div class="flex justify-between items-start mb-4">
             <span class="bg-green-50 text-brandGreen text-xs font-bold px-3 py-1 rounded-full">Recreación</span>
-            <i class="fa-solid fa-wallet text-2xl text-brandGreen"></i>
+            <i class="fa-solid fa-masks-theater text-2xl text-brandGreen"></i>
           </div>
-          <h3 class="text-xl font-bold mb-2 text-gray-900">Actividades recreativas y culturales</h3>
-          <p class="text-gray-600 text-sm mb-4">Liquidez inmediata para viajes, unificación de deudas o imprevistos familiares.</p>
-          <ul class="text-xs text-gray-500 space-y-2 mb-6">
-            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Plazo máximo hasta 72 meses</li>
-            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Descuento por nómina disponible</li>
-            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Sin sanción por prepago</li>
+          <h3 class="text-2xl font-bold mb-2 text-gray-900">Actividades recreativas y culturales</h3>
+          <p class="text-gray-600 text-xl mb-4">Talleres, muestras artísticas y eventos de esparcimiento orientados al desarrollo integral de la comunidad.</p>
+          <ul class="text-gray-500 space-y-2 mb-6">
+            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Talleres artísticos y formativos</li>
+            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Salidas pedagógicas y de entretenimiento</li>
+            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Impulso al talento regional</li>
           </ul>
         </div>
         <div class="p-6 bg-gray-50 border-t flex items-center justify-between">
-          <span class="text-xs text-gray-500">Estudio en 24 horas</span>
+          <span class="text-xs text-gray-500">Cultura e Integración</span>
           <a href="#" class="bg-brandGreen text-white px-4 py-2 rounded-lg text-xs font-bold hover:bg-brandBrown transition">Más Información</a>
         </div>
       </div>
@@ -459,18 +456,18 @@
         <div class="p-6">
           <div class="flex justify-between items-start mb-4">
             <span class="bg-orange-50 text-brandBrown text-xs font-bold px-3 py-1 rounded-full">Recreación</span>
-            <i class="fa-solid fa-shield-halved text-2xl text-brandBrown"></i>
+            <i class="fa-solid fa-cake-candles text-2xl text-brandBrown"></i>
           </div>
-          <h3 class="text-xl font-bold mb-2 text-gray-900">Seguros y Exequial</h3>
-          <p class="text-gray-600 text-sm mb-4">Protección integral para el grupo familiar con cobertura amplia y tarifas especiales de grupo.</p>
-          <ul class="text-xs text-gray-500 space-y-2 mb-6">
-            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Pólizas de vida y vehículos</li>
-            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Plan exequial familiar</li>
-            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Cargo directo a la cuota</li>
+          <h3 class="text-2xl font-bold mb-2 text-gray-900">Fiesta de los niños</h3>
+          <p class="text-gray-600 text-xl mb-4">Gran evento infantil anual repleto de magia, diversión, shows y detalles para los más pequeños.</p>
+          <ul class="text-gray-500 space-y-2 mb-6">
+            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Show infantil y recreación dirigida</li>
+            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Entrega de obsequios y refrigerios</li>
+            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Celebración especial de fin de año</li>
           </ul>
         </div>
         <div class="p-6 bg-gray-50 border-t flex items-center justify-between">
-          <span class="text-xs text-gray-500">Cobertura Nacional</span>
+          <span class="text-xs text-gray-500">Alegría Infantil</span>
           <a href="#" class="bg-brandBrown text-white px-4 py-2 rounded-lg text-xs font-bold hover:bg-brandGreen transition">Más Información</a>
         </div>
       </div>
@@ -480,18 +477,18 @@
         <div class="p-6">
           <div class="flex justify-between items-start mb-4">
             <span class="bg-green-50 text-brandGreen text-xs font-bold px-3 py-1 rounded-full">Recreación</span>
-            <i class="fa-solid fa-wallet text-2xl text-brandGreen"></i>
+            <i class="fa-solid fa-award text-2xl text-brandGreen"></i>
           </div>
-          <h3 class="text-xl font-bold mb-2 text-gray-900">Reconocimientos para asociados</h3>
-          <p class="text-gray-600 text-sm mb-4">Liquidez inmediata para viajes, unificación de deudas o imprevistos familiares.</p>
-          <ul class="text-xs text-gray-500 space-y-2 mb-6">
-            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Plazo máximo hasta 72 meses</li>
-            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Descuento por nómina disponible</li>
-            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Sin sanción por prepago</li>
+          <h3 class="text-2xl font-bold mb-2 text-gray-900">Reconocimientos para asociados</h3>
+          <p class="text-gray-600 text-xl mb-4">Estímulos e incentivos especiales creados para premiar la fidelidad y constancia cooperativa.</p>
+          <ul class="text-gray-500 space-y-2 mb-6">
+            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Premiación por fidelidad y antigüedad</li>
+            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Estímulos al hábito del ahorro</li>
+            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Menciones honoríficas institucionales</li>
           </ul>
         </div>
         <div class="p-6 bg-gray-50 border-t flex items-center justify-between">
-          <span class="text-xs text-gray-500">Estudio en 24 horas</span>
+          <span class="text-xs text-gray-500">Valoramos tu Fidelidad</span>
           <a href="#" class="bg-brandGreen text-white px-4 py-2 rounded-lg text-xs font-bold hover:bg-brandBrown transition">Más Información</a>
         </div>
       </div>
@@ -501,18 +498,18 @@
         <div class="p-6">
           <div class="flex justify-between items-start mb-4">
             <span class="bg-orange-50 text-brandBrown text-xs font-bold px-3 py-1 rounded-full">Recreación</span>
-            <i class="fa-solid fa-shield-halved text-2xl text-brandBrown"></i>
+            <i class="fa-solid fa-gift text-2xl text-brandBrown"></i>
           </div>
-          <h3 class="text-xl font-bold mb-2 text-gray-900">Obsequios navideños</h3>
-          <p class="text-gray-600 text-sm mb-4">Protección integral para el grupo familiar con cobertura amplia y tarifas especiales de grupo.</p>
-          <ul class="text-xs text-gray-500 space-y-2 mb-6">
-            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Pólizas de vida y vehículos</li>
-            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Plan exequial familiar</li>
-            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Cargo directo a la cuota</li>
+          <h3 class="text-2xl font-bold mb-2 text-gray-900">Obsequios navideños</h3>
+          <p class="text-gray-600 text-xl mb-4">Detalle institucional entregado a cada asociado en la época navideña en agradecimiento a su confianza.</p>
+          <ul class="text-gray-500 space-y-2 mb-6">
+            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Entrega anual a asociados activos</li>
+            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Logística ágil para reclamo en sedes</li>
+            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Detalle especial de fin de año</li>
           </ul>
         </div>
         <div class="p-6 bg-gray-50 border-t flex items-center justify-between">
-          <span class="text-xs text-gray-500">Cobertura Nacional</span>
+          <span class="text-xs text-gray-500">Tradición Navideña</span>
           <a href="#" class="bg-brandBrown text-white px-4 py-2 rounded-lg text-xs font-bold hover:bg-brandGreen transition">Más Información</a>
         </div>
       </div>
@@ -522,18 +519,18 @@
         <div class="p-6">
           <div class="flex justify-between items-start mb-4">
             <span class="bg-green-50 text-brandGreen text-xs font-bold px-3 py-1 rounded-full">Auxilios</span>
-            <i class="fa-solid fa-wallet text-2xl text-brandGreen"></i>
+            <i class="fa-solid fa-user-doctor text-2xl text-brandGreen"></i>
           </div>
-          <h3 class="text-xl font-bold mb-2 text-gray-900">Auxilios de consultas médicas</h3>
-          <p class="text-gray-600 text-sm mb-4">Liquidez inmediata para viajes, unificación de deudas o imprevistos familiares.</p>
-          <ul class="text-xs text-gray-500 space-y-2 mb-6">
-            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Plazo máximo hasta 72 meses</li>
-            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Descuento por nómina disponible</li>
-            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Sin sanción por prepago</li>
+          <h3 class="text-2xl font-bold mb-2 text-gray-900">Auxilios de consultas médicas</h3>
+          <p class="text-gray-600 text-xl mb-4">Respaldo económico parcial en gastos derivados de atenciones médicas generales o especializadas.</p>
+          <ul class="text-gray-500 space-y-2 mb-6">
+            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Subsidio económico en consultas</li>
+            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Aplica para medicina general y especialidades</li>
+            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Trámite de reembolso sencillo</li>
           </ul>
         </div>
         <div class="p-6 bg-gray-50 border-t flex items-center justify-between">
-          <span class="text-xs text-gray-500">Estudio en 24 horas</span>
+          <span class="text-xs text-gray-500">Salud Integral</span>
           <a href="#" class="bg-brandGreen text-white px-4 py-2 rounded-lg text-xs font-bold hover:bg-brandBrown transition">Más Información</a>
         </div>
       </div>
@@ -543,18 +540,18 @@
         <div class="p-6">
           <div class="flex justify-between items-start mb-4">
             <span class="bg-orange-50 text-brandBrown text-xs font-bold px-3 py-1 rounded-full">Auxilios</span>
-            <i class="fa-solid fa-shield-halved text-2xl text-brandBrown"></i>
+            <i class="fa-solid fa-flask text-2xl text-brandBrown"></i>
           </div>
-          <h3 class="text-xl font-bold mb-2 text-gray-900">Exámenes de laboratorio</h3>
-          <p class="text-gray-600 text-sm mb-4">Protección integral para el grupo familiar con cobertura amplia y tarifas especiales de grupo.</p>
-          <ul class="text-xs text-gray-500 space-y-2 mb-6">
-            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Pólizas de vida y vehículos</li>
-            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Plan exequial familiar</li>
-            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Cargo directo a la cuota</li>
+          <h3 class="text-2xl font-bold mb-2 text-gray-900">Exámenes de laboratorio</h3>
+          <p class="text-gray-600 text-xl mb-4">Apoyo financiero para la realización de pruebas clínicas y diagnósticos de laboratorio recomendados.</p>
+          <ul class="text-gray-500 space-y-2 mb-6">
+            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Convenios con laboratorios reconocidos</li>
+            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Subsidio en exámenes especializados</li>
+            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Respaldo al diagnóstico preventivo</li>
           </ul>
         </div>
         <div class="p-6 bg-gray-50 border-t flex items-center justify-between">
-          <span class="text-xs text-gray-500">Cobertura Nacional</span>
+          <span class="text-xs text-gray-500">Prevención y Salud</span>
           <a href="#" class="bg-brandBrown text-white px-4 py-2 rounded-lg text-xs font-bold hover:bg-brandGreen transition">Más Información</a>
         </div>
       </div>
@@ -564,18 +561,18 @@
         <div class="p-6">
           <div class="flex justify-between items-start mb-4">
             <span class="bg-green-50 text-brandGreen text-xs font-bold px-3 py-1 rounded-full">Auxilios</span>
-            <i class="fa-solid fa-wallet text-2xl text-brandGreen"></i>
+            <i class="fa-solid fa-hand-holding-heart text-2xl text-brandGreen"></i>
           </div>
-          <h3 class="text-xl font-bold mb-2 text-gray-900">Auxilios solidarios</h3>
-          <p class="text-gray-600 text-sm mb-4">Liquidez inmediata para viajes, unificación de deudas o imprevistos familiares.</p>
-          <ul class="text-xs text-gray-500 space-y-2 mb-6">
-            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Plazo máximo hasta 72 meses</li>
-            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Descuento por nómina disponible</li>
-            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Sin sanción por prepago</li>
+          <h3 class="text-2xl font-bold mb-2 text-gray-900">Auxilios solidarios</h3>
+          <p class="text-gray-600 text-xl mb-4">Fondo de apoyo económico para asociados que afronten situaciones imprevistas o de vulnerabilidad.</p>
+          <ul class="text-gray-500 space-y-2 mb-6">
+            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Respuesta oportuna ante contingencias</li>
+            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Financiado por el Fondo de Solidaridad</li>
+            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Estudio rápido según reglamento</li>
           </ul>
         </div>
         <div class="p-6 bg-gray-50 border-t flex items-center justify-between">
-          <span class="text-xs text-gray-500">Estudio en 24 horas</span>
+          <span class="text-xs text-gray-500">Solidaridad Mutua</span>
           <a href="#" class="bg-brandGreen text-white px-4 py-2 rounded-lg text-xs font-bold hover:bg-brandBrown transition">Más Información</a>
         </div>
       </div>
@@ -585,18 +582,18 @@
         <div class="p-6">
           <div class="flex justify-between items-start mb-4">
             <span class="bg-orange-50 text-brandBrown text-xs font-bold px-3 py-1 rounded-full">Auxilios</span>
-            <i class="fa-solid fa-shield-halved text-2xl text-brandBrown"></i>
+            <i class="fa-solid fa-ribbon text-2xl text-brandBrown"></i>
           </div>
-          <h3 class="text-xl font-bold mb-2 text-gray-900">Servicios y auxilios fúnebres</h3>
-          <p class="text-gray-600 text-sm mb-4">Protección integral para el grupo familiar con cobertura amplia y tarifas especiales de grupo.</p>
-          <ul class="text-xs text-gray-500 space-y-2 mb-6">
-            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Pólizas de vida y vehículos</li>
-            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Plan exequial familiar</li>
-            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Cargo directo a la cuota</li>
+          <h3 class="text-2xl font-bold mb-2 text-gray-900">Servicios y auxilios fúnebres</h3>
+          <p class="text-gray-600 text-xl mb-4">Acompañamiento integral y auxilio económico para afrontar momentos de duelo familiar.</p>
+          <ul class="text-gray-500 space-y-2 mb-6">
+            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Cobertura exequial para el grupo familiar</li>
+            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Auxilio directo en gastos de previsión</li>
+            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Atención y asistencia permanente</li>
           </ul>
         </div>
         <div class="p-6 bg-gray-50 border-t flex items-center justify-between">
-          <span class="text-xs text-gray-500">Cobertura Nacional</span>
+          <span class="text-xs text-gray-500">Tranquilidad Familiar</span>
           <a href="#" class="bg-brandBrown text-white px-4 py-2 rounded-lg text-xs font-bold hover:bg-brandGreen transition">Más Información</a>
         </div>
       </div>
@@ -606,18 +603,18 @@
         <div class="p-6">
           <div class="flex justify-between items-start mb-4">
             <span class="bg-green-50 text-brandGreen text-xs font-bold px-3 py-1 rounded-full">Auxilios</span>
-            <i class="fa-solid fa-wallet text-2xl text-brandGreen"></i>
+            <i class="fa-solid fa-hospital text-2xl text-brandGreen"></i>
           </div>
-          <h3 class="text-xl font-bold mb-2 text-gray-900">Auxilio por intervención quirúrgica</h3>
-          <p class="text-gray-600 text-sm mb-4">Liquidez inmediata para viajes, unificación de deudas o imprevistos familiares.</p>
-          <ul class="text-xs text-gray-500 space-y-2 mb-6">
-            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Plazo máximo hasta 72 meses</li>
-            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Descuento por nómina disponible</li>
-            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Sin sanción por prepago</li>
+          <h3 class="text-2xl font-bold mb-2 text-gray-900">Auxilio por intervención quirúrgica</h3>
+          <p class="text-gray-600 text-xl mb-4">Ayuda económica entregada para aminorar los costos derivados de cirugías o internaciones médicas.</p>
+          <ul class="text-gray-500 space-y-2 mb-6">
+            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Apoyo en cirugías programadas o de urgencia</li>
+            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Requisitos con certificación médica oficial</li>
+            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Desembolso según tabla de auxilios</li>
           </ul>
         </div>
         <div class="p-6 bg-gray-50 border-t flex items-center justify-between">
-          <span class="text-xs text-gray-500">Estudio en 24 horas</span>
+          <span class="text-xs text-gray-500">Respaldo Médico</span>
           <a href="#" class="bg-brandGreen text-white px-4 py-2 rounded-lg text-xs font-bold hover:bg-brandBrown transition">Más Información</a>
         </div>
       </div>
@@ -627,18 +624,18 @@
         <div class="p-6">
           <div class="flex justify-between items-start mb-4">
             <span class="bg-orange-50 text-brandBrown text-xs font-bold px-3 py-1 rounded-full">Auxilios</span>
-            <i class="fa-solid fa-shield-halved text-2xl text-brandBrown"></i>
+            <i class="fa-solid fa-glasses text-2xl text-brandBrown"></i>
           </div>
-          <h3 class="text-xl font-bold mb-2 text-gray-900">Suministro de lentes y monturas</h3>
-          <p class="text-gray-600 text-sm mb-4">Protección integral para el grupo familiar con cobertura amplia y tarifas especiales de grupo.</p>
-          <ul class="text-xs text-gray-500 space-y-2 mb-6">
-            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Pólizas de vida y vehículos</li>
-            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Plan exequial familiar</li>
-            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Cargo directo a la cuota</li>
+          <h3 class="text-2xl font-bold mb-2 text-gray-900">Suministro de lentes y monturas</h3>
+          <p class="text-gray-600 text-xl mb-4">Subsidio enfocado en la salud visual para la compra de monturas y lentes formulados.</p>
+          <ul class="text-gray-500 space-y-2 mb-6">
+            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Auxilio económico para fórmula óptica</li>
+            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Descuentos en ópticas asociadas</li>
+            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Beneficio extensible a familiares</li>
           </ul>
         </div>
         <div class="p-6 bg-gray-50 border-t flex items-center justify-between">
-          <span class="text-xs text-gray-500">Cobertura Nacional</span>
+          <span class="text-xs text-gray-500">Salud Visual</span>
           <a href="#" class="bg-brandBrown text-white px-4 py-2 rounded-lg text-xs font-bold hover:bg-brandGreen transition">Más Información</a>
         </div>
       </div>
@@ -648,18 +645,18 @@
         <div class="p-6">
           <div class="flex justify-between items-start mb-4">
             <span class="bg-green-50 text-brandGreen text-xs font-bold px-3 py-1 rounded-full">Auxilios</span>
-            <i class="fa-solid fa-wallet text-2xl text-brandGreen"></i>
+            <i class="fa-solid fa-pills text-2xl text-brandGreen"></i>
           </div>
-          <h3 class="text-xl font-bold mb-2 text-gray-900">Compra de medicamentos</h3>
-          <p class="text-gray-600 text-sm mb-4">Liquidez inmediata para viajes, unificación de deudas o imprevistos familiares.</p>
-          <ul class="text-xs text-gray-500 space-y-2 mb-6">
-            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Plazo máximo hasta 72 meses</li>
-            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Descuento por nómina disponible</li>
-            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Sin sanción por prepago</li>
+          <h3 class="text-2xl font-bold mb-2 text-gray-900">Compra de medicamentos</h3>
+          <p class="text-gray-600 text-xl mb-4">Contribución económica para mitigar el costo en fórmulas farmacéuticas y tratamientos médicos.</p>
+          <ul class="text-gray-500 space-y-2 mb-6">
+            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Reembolso parcial sobre facturas de farmacia</li>
+            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Validación con receta médica expedida</li>
+            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Cobertura para medicamentos no POS</li>
           </ul>
         </div>
         <div class="p-6 bg-gray-50 border-t flex items-center justify-between">
-          <span class="text-xs text-gray-500">Estudio en 24 horas</span>
+          <span class="text-xs text-gray-500">Apoyo Farmacéutico</span>
           <a href="#" class="bg-brandGreen text-white px-4 py-2 rounded-lg text-xs font-bold hover:bg-brandBrown transition">Más Información</a>
         </div>
       </div>
@@ -669,18 +666,18 @@
         <div class="p-6">
           <div class="flex justify-between items-start mb-4">
             <span class="bg-orange-50 text-brandBrown text-xs font-bold px-3 py-1 rounded-full">Auxilios</span>
-            <i class="fa-solid fa-shield-halved text-2xl text-brandBrown"></i>
+            <i class="fa-solid fa-bed-pulse text-2xl text-brandBrown"></i>
           </div>
-          <h3 class="text-xl font-bold mb-2 text-gray-900">Auxilio por incapacidad médica</h3>
-          <p class="text-gray-600 text-sm mb-4">Protección integral para el grupo familiar con cobertura amplia y tarifas especiales de grupo.</p>
-          <ul class="text-xs text-gray-500 space-y-2 mb-6">
-            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Pólizas de vida y vehículos</li>
-            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Plan exequial familiar</li>
-            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Cargo directo a la cuota</li>
+          <h3 class="text-2xl font-bold mb-2 text-gray-900">Auxilio por incapacidad médica</h3>
+          <p class="text-gray-600 text-xl mb-4">Sostén financiero temporal cuando el asociado sufra una incapacidad médica prolongada.</p>
+          <ul class="text-gray-500 space-y-2 mb-6">
+            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Apoyo por días de incapacidad certificada</li>
+            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Mitiga la reducción temporal de ingresos</li>
+            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Acompañamiento solidario directo</li>
           </ul>
         </div>
         <div class="p-6 bg-gray-50 border-t flex items-center justify-between">
-          <span class="text-xs text-gray-500">Cobertura Nacional</span>
+          <span class="text-xs text-gray-500">Protección en Salud</span>
           <a href="#" class="bg-brandBrown text-white px-4 py-2 rounded-lg text-xs font-bold hover:bg-brandGreen transition">Más Información</a>
         </div>
       </div>
@@ -690,18 +687,18 @@
         <div class="p-6">
           <div class="flex justify-between items-start mb-4">
             <span class="bg-green-50 text-brandGreen text-xs font-bold px-3 py-1 rounded-full">Auxilios</span>
-            <i class="fa-solid fa-wallet text-2xl text-brandGreen"></i>
+            <i class="fa-solid fa-baby text-2xl text-brandGreen"></i>
           </div>
-          <h3 class="text-xl font-bold mb-2 text-gray-900">Licencia de maternidad</h3>
-          <p class="text-gray-600 text-sm mb-4">Liquidez inmediata para viajes, unificación de deudas o imprevistos familiares.</p>
-          <ul class="text-xs text-gray-500 space-y-2 mb-6">
-            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Plazo máximo hasta 72 meses</li>
-            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Descuento por nómina disponible</li>
-            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Sin sanción por prepago</li>
+          <h3 class="text-2xl font-bold mb-2 text-gray-900">Licencia de maternidad</h3>
+          <p class="text-gray-600 text-xl mb-4">Incentivo económico para celebrar el nacimiento o adopción de un nuevo miembro en tu familia.</p>
+          <ul class="text-gray-500 space-y-2 mb-6">
+            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Bono de bienvenida por nacimiento</li>
+            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Trámite con copia del registro civil</li>
+            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Requisitos según antigüedad de la asociada</li>
           </ul>
         </div>
         <div class="p-6 bg-gray-50 border-t flex items-center justify-between">
-          <span class="text-xs text-gray-500">Estudio en 24 horas</span>
+          <span class="text-xs text-gray-500">Apoyo a la Maternidad</span>
           <a href="#" class="bg-brandGreen text-white px-4 py-2 rounded-lg text-xs font-bold hover:bg-brandBrown transition">Más Información</a>
         </div>
       </div>
@@ -711,18 +708,18 @@
         <div class="p-6">
           <div class="flex justify-between items-start mb-4">
             <span class="bg-orange-50 text-brandBrown text-xs font-bold px-3 py-1 rounded-full">Auxilios</span>
-            <i class="fa-solid fa-shield-halved text-2xl text-brandBrown"></i>
+            <i class="fa-solid fa-tooth text-2xl text-brandBrown"></i>
           </div>
-          <h3 class="text-xl font-bold mb-2 text-gray-900">Servicio de odontología especial</h3>
-          <p class="text-gray-600 text-sm mb-4">Protección integral para el grupo familiar con cobertura amplia y tarifas especiales de grupo.</p>
-          <ul class="text-xs text-gray-500 space-y-2 mb-6">
-            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Pólizas de vida y vehículos</li>
-            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Plan exequial familiar</li>
-            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Cargo directo a la cuota</li>
+          <h3 class="text-2xl font-bold mb-2 text-gray-900">Servicio de odontología especial</h3>
+          <p class="text-gray-600 text-xl mb-4">Apoyo económico y descuentos preferenciales en procedimientos de odontología e higiene oral.</p>
+          <ul class="text-gray-500 space-y-2 mb-6">
+            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Descuentos con odontólogos en convenio</li>
+            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Auxilio para ortodoncia o prótesis</li>
+            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Atención para el asociado y beneficiarios</li>
           </ul>
         </div>
         <div class="p-6 bg-gray-50 border-t flex items-center justify-between">
-          <span class="text-xs text-gray-500">Cobertura Nacional</span>
+          <span class="text-xs text-gray-500">Salud Oral</span>
           <a href="#" class="bg-brandBrown text-white px-4 py-2 rounded-lg text-xs font-bold hover:bg-brandGreen transition">Más Información</a>
         </div>
       </div>
@@ -732,18 +729,18 @@
         <div class="p-6">
           <div class="flex justify-between items-start mb-4">
             <span class="bg-green-50 text-brandGreen text-xs font-bold px-3 py-1 rounded-full">Auxilios</span>
-            <i class="fa-solid fa-wallet text-2xl text-brandGreen"></i>
+            <i class="fa-solid fa-heart-pulse text-2xl text-brandGreen"></i>
           </div>
-          <h3 class="text-xl font-bold mb-2 text-gray-900">Auxilio por enfermedad de alto costo</h3>
-          <p class="text-gray-600 text-sm mb-4">Liquidez inmediata para viajes, unificación de deudas o imprevistos familiares.</p>
-          <ul class="text-xs text-gray-500 space-y-2 mb-6">
-            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Plazo máximo hasta 72 meses</li>
-            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Descuento por nómina disponible</li>
-            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Sin sanción por prepago</li>
+          <h3 class="text-2xl font-bold mb-2 text-gray-900">Auxilio por enfermedad de alto costo</h3>
+          <p class="text-gray-600 text-xl mb-4">Respaldo económico reforzado para asociados diagnosticados con enfermedades catastróficas.</p>
+          <ul class="text-gray-500 space-y-2 mb-6">
+            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Monto de auxilio prioritario de emergencia</li>
+            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Acompañamiento humano y profesional</li>
+            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Alivio ante tratamientos de alta complejidad</li>
           </ul>
         </div>
         <div class="p-6 bg-gray-50 border-t flex items-center justify-between">
-          <span class="text-xs text-gray-500">Estudio en 24 horas</span>
+          <span class="text-xs text-gray-500">Respaldo Prioritario</span>
           <a href="#" class="bg-brandGreen text-white px-4 py-2 rounded-lg text-xs font-bold hover:bg-brandBrown transition">Más Información</a>
         </div>
       </div>
@@ -753,18 +750,18 @@
         <div class="p-6">
           <div class="flex justify-between items-start mb-4">
             <span class="bg-orange-50 text-brandBrown text-xs font-bold px-3 py-1 rounded-full">Auxilios</span>
-            <i class="fa-solid fa-shield-halved text-2xl text-brandBrown"></i>
+            <i class="fa-solid fa-medal text-2xl text-brandBrown"></i>
           </div>
-          <h3 class="text-xl font-bold mb-2 text-gray-900">Auxilio por perseverancia de antigüedad</h3>
-          <p class="text-gray-600 text-sm mb-4">Protección integral para el grupo familiar con cobertura amplia y tarifas especiales de grupo.</p>
-          <ul class="text-xs text-gray-500 space-y-2 mb-6">
-            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Pólizas de vida y vehículos</li>
-            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Plan exequial familiar</li>
-            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Cargo directo a la cuota</li>
+          <h3 class="text-2xl font-bold mb-2 text-gray-900">Auxilio por perseverancia de antigüedad</h3>
+          <p class="text-gray-600 text-xl mb-4">Reconocimiento económico a asociados que mantienen una intachable trayectoria en la cooperativa.</p>
+          <ul class="text-gray-500 space-y-2 mb-6">
+            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Otorgado por quinquenios cumplidos</li>
+            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Abono directo a cuenta o aportes</li>
+            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Reconocimiento en Asamblea General</li>
           </ul>
         </div>
         <div class="p-6 bg-gray-50 border-t flex items-center justify-between">
-          <span class="text-xs text-gray-500">Cobertura Nacional</span>
+          <span class="text-xs text-gray-500">Fidelidad Cooperativa</span>
           <a href="#" class="bg-brandBrown text-white px-4 py-2 rounded-lg text-xs font-bold hover:bg-brandGreen transition">Más Información</a>
         </div>
       </div>
@@ -774,18 +771,18 @@
         <div class="p-6">
           <div class="flex justify-between items-start mb-4">
             <span class="bg-green-50 text-brandGreen text-xs font-bold px-3 py-1 rounded-full">Auxilios</span>
-            <i class="fa-solid fa-wallet text-2xl text-brandGreen"></i>
+            <i class="fa-solid fa-people-hands text-2xl text-brandGreen"></i>
           </div>
-          <h3 class="text-xl font-bold mb-2 text-gray-900">Auxilio mutualista</h3>
-          <p class="text-gray-600 text-sm mb-4">Liquidez inmediata para viajes, unificación de deudas o imprevistos familiares.</p>
-          <ul class="text-xs text-gray-500 space-y-2 mb-6">
-            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Plazo máximo hasta 72 meses</li>
-            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Descuento por nómina disponible</li>
-            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Sin sanción por prepago</li>
+          <h3 class="text-2xl font-bold mb-2 text-gray-900">Auxilio mutualista</h3>
+          <p class="text-gray-600 text-xl mb-4">Fondo de ayuda mutua destinado a brindar respaldo ante imprevistos no cubiertos en otros planes.</p>
+          <ul class="text-gray-500 space-y-2 mb-6">
+            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Evaluación por Comité de Solidaridad</li>
+            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Basado en la ayuda mutua cooperativa</li>
+            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Respuesta oportuna a la solicitud</li>
           </ul>
         </div>
         <div class="p-6 bg-gray-50 border-t flex items-center justify-between">
-          <span class="text-xs text-gray-500">Estudio en 24 horas</span>
+          <span class="text-xs text-gray-500">Ayuda Mutua</span>
           <a href="#" class="bg-brandGreen text-white px-4 py-2 rounded-lg text-xs font-bold hover:bg-brandBrown transition">Más Información</a>
         </div>
       </div>
@@ -795,18 +792,18 @@
         <div class="p-6">
           <div class="flex justify-between items-start mb-4">
             <span class="bg-orange-50 text-brandBrown text-xs font-bold px-3 py-1 rounded-full">Auxilios</span>
-            <i class="fa-solid fa-shield-halved text-2xl text-brandBrown"></i>
+            <i class="fa-solid fa-wheelchair text-2xl text-brandBrown"></i>
           </div>
-          <h3 class="text-xl font-bold mb-2 text-gray-900">Compra o arrendamiento aparatos movilísticos</h3>
-          <p class="text-gray-600 text-sm mb-4">Protección integral para el grupo familiar con cobertura amplia y tarifas especiales de grupo.</p>
-          <ul class="text-xs text-gray-500 space-y-2 mb-6">
-            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Pólizas de vida y vehículos</li>
-            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Plan exequial familiar</li>
-            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Cargo directo a la cuota</li>
+          <h3 class="text-2xl font-bold mb-2 text-gray-900">Compra o arrendamiento aparatos movilísticos</h3>
+          <p class="text-gray-600 text-xl mb-4">Subsidio destinado a la adquisición o alquiler de sillas de ruedas, prótesis y ortesis.</p>
+          <ul class="text-gray-500 space-y-2 mb-6">
+            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Apoyo en compra o alquiler de insumos de movilidad</li>
+            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Mejora la calidad de vida e inclusión del asociado</li>
+            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Subsidio parcial o total según reglamento</li>
           </ul>
         </div>
         <div class="p-6 bg-gray-50 border-t flex items-center justify-between">
-          <span class="text-xs text-gray-500">Cobertura Nacional</span>
+          <span class="text-xs text-gray-500">Inclusión y Movilidad</span>
           <a href="#" class="bg-brandBrown text-white px-4 py-2 rounded-lg text-xs font-bold hover:bg-brandGreen transition">Más Información</a>
         </div>
       </div>
@@ -816,18 +813,18 @@
         <div class="p-6">
           <div class="flex justify-between items-start mb-4">
             <span class="bg-green-50 text-brandGreen text-xs font-bold px-3 py-1 rounded-full">Auxilios</span>
-            <i class="fa-solid fa-wallet text-2xl text-brandGreen"></i>
+            <i class="fa-solid fa-house-chimney-crack text-2xl text-brandGreen"></i>
           </div>
-          <h3 class="text-xl font-bold mb-2 text-gray-900">Auxilio por calamidad doméstica</h3>
-          <p class="text-gray-600 text-sm mb-4">Liquidez inmediata para viajes, unificación de deudas o imprevistos familiares.</p>
-          <ul class="text-xs text-gray-500 space-y-2 mb-6">
-            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Plazo máximo hasta 72 meses</li>
-            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Descuento por nómina disponible</li>
-            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Sin sanción por prepago</li>
+          <h3 class="text-2xl font-bold mb-2 text-gray-900">Auxilio por calamidad doméstica</h3>
+          <p class="text-gray-600 text-xl mb-4">Ayuda rápida enviada a asociados afectados por incendios, inundaciones u otros desastres en su hogar.</p>
+          <ul class="text-gray-500 space-y-2 mb-6">
+            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Entrega inmediata para atención de la urgencia</li>
+            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Visita o verificación técnica de soporte</li>
+            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Mitiga los daños causados en la vivienda</li>
           </ul>
         </div>
         <div class="p-6 bg-gray-50 border-t flex items-center justify-between">
-          <span class="text-xs text-gray-500">Estudio en 24 horas</span>
+          <span class="text-xs text-gray-500">Emergencia Familiar</span>
           <a href="#" class="bg-brandGreen text-white px-4 py-2 rounded-lg text-xs font-bold hover:bg-brandBrown transition">Más Información</a>
         </div>
       </div>
@@ -837,18 +834,18 @@
         <div class="p-6">
           <div class="flex justify-between items-start mb-4">
             <span class="bg-orange-50 text-brandBrown text-xs font-bold px-3 py-1 rounded-full">Auxilios</span>
-            <i class="fa-solid fa-shield-halved text-2xl text-brandBrown"></i>
+            <i class="fa-solid fa-book-open-reader text-2xl text-brandBrown"></i>
           </div>
-          <h3 class="text-xl font-bold mb-2 text-gray-900">Auxilios educativos</h3>
-          <p class="text-gray-600 text-sm mb-4">Protección integral para el grupo familiar con cobertura amplia y tarifas especiales de grupo.</p>
-          <ul class="text-xs text-gray-500 space-y-2 mb-6">
-            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Pólizas de vida y vehículos</li>
-            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Plan exequial familiar</li>
-            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Cargo directo a la cuota</li>
+          <h3 class="text-2xl font-bold mb-2 text-gray-900">Auxilios educativos</h3>
+          <p class="text-gray-600 text-xl mb-4">Subsidios en dinero y entrega de útiles escolares para la educación del asociado y su núcleo familiar.</p>
+          <ul class="text-gray-500 space-y-2 mb-6">
+            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Convocatoria anual para entrega de kits escolares</li>
+            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Estímulos por excelencia académica</li>
+            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Cobertura para básica, media y educación superior</li>
           </ul>
         </div>
         <div class="p-6 bg-gray-50 border-t flex items-center justify-between">
-          <span class="text-xs text-gray-500">Cobertura Nacional</span>
+          <span class="text-xs text-gray-500">Impulso Educativo</span>
           <a href="#" class="bg-brandBrown text-white px-4 py-2 rounded-lg text-xs font-bold hover:bg-brandGreen transition">Más Información</a>
         </div>
       </div>
@@ -858,18 +855,18 @@
         <div class="p-6">
           <div class="flex justify-between items-start mb-4">
             <span class="bg-green-50 text-brandGreen text-xs font-bold px-3 py-1 rounded-full">Auxilios</span>
-            <i class="fa-solid fa-wallet text-2xl text-brandGreen"></i>
+            <i class="fa-solid fa-file-invoice-dollar text-2xl text-brandGreen"></i>
           </div>
-          <h3 class="text-xl font-bold mb-2 text-gray-900">Auxilio a pago de cartera por desempleo</h3>
-          <p class="text-gray-600 text-sm mb-4">Liquidez inmediata para viajes, unificación de deudas o imprevistos familiares.</p>
-          <ul class="text-xs text-gray-500 space-y-2 mb-6">
-            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Plazo máximo hasta 72 meses</li>
-            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Descuento por nómina disponible</li>
-            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Sin sanción por prepago</li>
+          <h3 class="text-2xl font-bold mb-2 text-gray-900">Auxilio a pago de cartera por desempleo</h3>
+          <p class="text-gray-600 text-xl mb-4">Cubrimiento temporal de cuotas de crédito con San Simón cuando atravieses por pérdida de empleo.</p>
+          <ul class="text-gray-500 space-y-2 mb-6">
+            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Cubre la cuota del crédito de manera temporal</li>
+            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Protege la calificación crediticia del asociado</li>
+            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Exclusivo para obligaciones con la Cooperativa</li>
           </ul>
         </div>
         <div class="p-6 bg-gray-50 border-t flex items-center justify-between">
-          <span class="text-xs text-gray-500">Estudio en 24 horas</span>
+          <span class="text-xs text-gray-500">Protección de Cartera</span>
           <a href="#" class="bg-brandGreen text-white px-4 py-2 rounded-lg text-xs font-bold hover:bg-brandBrown transition">Más Información</a>
         </div>
       </div>
@@ -879,18 +876,18 @@
         <div class="p-6">
           <div class="flex justify-between items-start mb-4">
             <span class="bg-orange-50 text-brandBrown text-xs font-bold px-3 py-1 rounded-full">Auxilios</span>
-            <i class="fa-solid fa-shield-halved text-2xl text-brandBrown"></i>
+            <i class="fa-solid fa-person-walking-with-cane text-2xl text-brandBrown"></i>
           </div>
-          <h3 class="text-xl font-bold mb-2 text-gray-900">Auxilio nuevos pensionados</h3>
-          <p class="text-gray-600 text-sm mb-4">Protección integral para el grupo familiar con cobertura amplia y tarifas especiales de grupo.</p>
-          <ul class="text-xs text-gray-500 space-y-2 mb-6">
-            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Pólizas de vida y vehículos</li>
-            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Plan exequial familiar</li>
-            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Cargo directo a la cuota</li>
+          <h3 class="text-2xl font-bold mb-2 text-gray-900">Auxilio nuevos pensionados</h3>
+          <p class="text-gray-600 text-xl mb-4">Bonificación especial de felicitación para el asociado que obtenga su jubilación laboral.</p>
+          <ul class="text-gray-500 space-y-2 mb-6">
+            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Estímulo único al concretar la jubilación</li>
+            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Reconocimiento a la vida laboral activa</li>
+            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Trámite sencillo con la resolución de pensión</li>
           </ul>
         </div>
         <div class="p-6 bg-gray-50 border-t flex items-center justify-between">
-          <span class="text-xs text-gray-500">Cobertura Nacional</span>
+          <span class="text-xs text-gray-500">Jubilación Merecida</span>
           <a href="#" class="bg-brandBrown text-white px-4 py-2 rounded-lg text-xs font-bold hover:bg-brandGreen transition">Más Información</a>
         </div>
       </div>
@@ -900,18 +897,18 @@
         <div class="p-6">
           <div class="flex justify-between items-start mb-4">
             <span class="bg-green-50 text-brandGreen text-xs font-bold px-3 py-1 rounded-full">Auxilios</span>
-            <i class="fa-solid fa-wallet text-2xl text-brandGreen"></i>
+            <i class="fa-solid fa-car-side text-2xl text-brandGreen"></i>
           </div>
-          <h3 class="text-xl font-bold mb-2 text-gray-900">Compra de vivienda y/o vehículo</h3>
-          <p class="text-gray-600 text-sm mb-4">Liquidez inmediata para viajes, unificación de deudas o imprevistos familiares.</p>
-          <ul class="text-xs text-gray-500 space-y-2 mb-6">
-            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Plazo máximo hasta 72 meses</li>
-            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Descuento por nómina disponible</li>
-            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Sin sanción por prepago</li>
+          <h3 class="text-2xl font-bold mb-2 text-gray-900">Compra de vivienda y/o vehículo</h3>
+          <p class="text-gray-600 text-xl mb-4">Incentivo de estímulo al asociados que adquiera su vivienda propia o vehículo familiar.</p>
+          <ul class="text-gray-500 space-y-2 mb-6">
+            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Incentivo complementario por logro patrimonial</li>
+            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Aplica previa acreditación de compra efectiva</li>
+            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i>Respaldo al fortalecimiento familiar</li>
           </ul>
         </div>
         <div class="p-6 bg-gray-50 border-t flex items-center justify-between">
-          <span class="text-xs text-gray-500">Estudio en 24 horas</span>
+          <span class="text-xs text-gray-500">Logro Patrimonial</span>
           <a href="#" class="bg-brandGreen text-white px-4 py-2 rounded-lg text-xs font-bold hover:bg-brandBrown transition">Más Información</a>
         </div>
       </div>
@@ -921,18 +918,18 @@
         <div class="p-6">
           <div class="flex justify-between items-start mb-4">
             <span class="bg-orange-50 text-brandBrown text-xs font-bold px-3 py-1 rounded-full">Auxilios</span>
-            <i class="fa-solid fa-shield-halved text-2xl text-brandBrown"></i>
+            <i class="fa-solid fa-ticket text-2xl text-brandBrown"></i>
           </div>
-          <h3 class="text-xl font-bold mb-2 text-gray-900">Bonos solidarios</h3>
-          <p class="text-gray-600 text-sm mb-4">Protección integral para el grupo familiar con cobertura amplia y tarifas especiales de grupo.</p>
-          <ul class="text-xs text-gray-500 space-y-2 mb-6">
-            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Pólizas de vida y vehículos</li>
-            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Plan exequial familiar</li>
-            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Cargo directo a la cuota</li>
+          <h3 class="text-2xl font-bold mb-2 text-gray-900">Bonos solidarios</h3>
+          <p class="text-gray-600 text-xl mb-4">Entrega periódica de bonos de consumo o supermercado en apoyo directo al presupuesto del hogar.</p>
+          <ul class="text-gray-500 space-y-2 mb-6">
+            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Bonos canjeables en cadenas de supermercados</li>
+            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Apoyo directo a la canasta familiar</li>
+            <li><i class="fa-solid fa-check text-brandBrown mr-2"></i>Entregas según reglamentación de solidaridad</li>
           </ul>
         </div>
         <div class="p-6 bg-gray-50 border-t flex items-center justify-between">
-          <span class="text-xs text-gray-500">Cobertura Nacional</span>
+          <span class="text-xs text-gray-500">Apoyo al Hogar</span>
           <a href="#" class="bg-brandBrown text-white px-4 py-2 rounded-lg text-xs font-bold hover:bg-brandGreen transition">Más Información</a>
         </div>
       </div>
@@ -940,7 +937,7 @@
     </div>
   </main>
 
-  <!-- Banner de Asesoría Personalizada (Destacado en amarillo) -->
+  <!-- Banner de Asesoría Personalizada -->
   <section class="bg-gray-100 border-t border-b py-12 px-4">
     <div class="max-w-4xl mx-auto text-center">
       <h2 class="text-2xl font-bold text-gray-900">¿Necesitas asesoría para elegir la mejor opción?</h2>
@@ -952,142 +949,142 @@
   </section>
 
   <!-- Footer -->
-    <footer class="bg-gray-900 text-gray-300 py-12 border-t-4 border-brandGreen">
-      <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-4 gap-8">
-        <div>
-          <h4 class="text-brandYellow font-semibold text-xl mb-6">Cooperativa San Simón</h4>
-          <p class="text-sm text-gray-400">Vigilado Superintendencia de la Economía Solidaria. Inscrito a Fogacoop.</p>
-        </div>
-        <div>
-          <h5 class="text-brandYellow font-semibold mb-3">Accesos Rápidos</h5>
-          <ul class="space-y-2 text-sm">
-            <li><a href="#" class="hover:text-white transition">Sucursal Virtual</a></li>
-            <li><a href="#" class="hover:text-white transition">Pago PSE</a></li>
-            <li><a href="#" class="hover:text-white transition">Estatutos y Transparencia</a></li>
-          </ul>
-        </div>
-        <div>
-          <h5 class="text-brandYellow font-semibold mb-3">Servicios</h5>
-          <ul class="space-y-2 text-sm">
-            <li><a href="#" class="hover:text-white transition">Líneas de Crédito</a></li>
-            <li><a href="#" class="hover:text-white transition">CDAT / Inversión</a></li>
-            <li><a href="#" class="hover:text-white transition">Convenios y Seguros</a></li>
-          </ul>
-        </div>
-        <div>
-          <h5 class="text-brandYellow font-semibold mb-3">Contacto</h5>
-          <p class="text-sm text-gray-400 mb-1"><i class="fa-solid fa-location-dot text-brandBrown mr-2"></i>Sede Principal: Cra 2a #14a-02 B <br> Santa Librada, Ibagué, Tolima</p>
-          <p class="text-sm text-gray-400"><i class="fa-solid fa-envelope text-brandBrown mr-2"></i>contacto@coopsansimon.com</p>
-        </div>
+  <footer class="bg-gray-900 text-gray-300 py-12 border-t-4 border-brandGreen">
+    <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-4 gap-8">
+      <div>
+        <h4 class="text-brandYellow font-semibold text-xl mb-6">Cooperativa San Simón</h4>
+        <p class="text-sm text-gray-400">Vigilado Superintendencia de la Economía Solidaria. Inscrito a Fogacoop.</p>
       </div>
-    </footer>
+      <div>
+        <h5 class="text-brandYellow font-semibold mb-3">Accesos Rápidos</h5>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#" class="hover:text-white transition">Sucursal Virtual</a></li>
+          <li><a href="#" class="hover:text-white transition">Pago PSE</a></li>
+          <li><a href="#" class="hover:text-white transition">Estatutos y Transparencia</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 class="text-brandYellow font-semibold mb-3">Servicios</h5>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#" class="hover:text-white transition">Líneas de Crédito</a></li>
+          <li><a href="#" class="hover:text-white transition">CDAT / Inversión</a></li>
+          <li><a href="#" class="hover:text-white transition">Convenios y Seguros</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 class="text-brandYellow font-semibold mb-3">Contacto</h5>
+        <p class="text-sm text-gray-400 mb-1"><i class="fa-solid fa-location-dot text-brandBrown mr-2"></i>Sede Principal: Cra 2a #14a-02 B <br> Santa Librada, Ibagué, Tolima</p>
+        <p class="text-sm text-gray-400"><i class="fa-solid fa-envelope text-brandBrown mr-2"></i>contacto@coopsansimon.com</p>
+      </div>
+    </div>
+  </footer>
 
   <!-- Botones Flotantes de Navegación -->
-    <div class="fixed bottom-6 right-6 z-50 flex flex-col space-y-3 items-end">
+  <div class="fixed bottom-6 right-6 z-50 flex flex-col space-y-3 items-end">
 
-      <!-- Botón PSE -->
-      <a href="https://www.psepagos.co/PSEHostingUI/ShowTicketOffice.aspx?ID=12274" title="Pagos PSE" 
-        class="flex items-center bg-white text-gray-800 p-2.5 rounded-full shadow-xl border border-gray-200 hover:scale-105 hover:bg-white transition-all duration-300 group">
-        <span class="max-w-0 overflow-hidden whitespace-nowrap group-hover:max-w-xs transition-all duration-300 text-xs font-bold text-gray-700 pl-1 group-hover:pr-2">
-          Pagos PSE
-        </span>
-        <img src="ImagenesCoopSansimon/logoPSE.jpg" alt="PSE" class="w-8 h-8 object-contain" onError="this.remove(); this.nextElementSibling.classList.remove('hidden');">
-        <i class="fa-solid fa-credit-card text-brandGreen text-xl hidden"></i>
-      </a>
+    <!-- Botón PSE -->
+    <a href="https://www.psepagos.co/PSEHostingUI/ShowTicketOffice.aspx?ID=12274" title="Pagos PSE" 
+      class="flex items-center bg-white text-gray-800 p-2.5 rounded-full shadow-xl border border-gray-200 hover:scale-105 hover:bg-white transition-all duration-300 group">
+      <span class="max-w-0 overflow-hidden whitespace-nowrap group-hover:max-w-xs transition-all duration-300 text-xs font-bold text-gray-700 pl-1 group-hover:pr-2">
+        Pagos PSE
+      </span>
+      <img src="ImagenesCoopSansimon/logoPSE.jpg" alt="PSE" class="w-8 h-8 object-contain" onError="this.remove(); this.nextElementSibling.classList.remove('hidden');">
+      <i class="fa-solid fa-credit-card text-brandGreen text-xl hidden"></i>
+    </a>
 
-      <!-- Botón Afiliación (Ahora abre la autorización) -->
-      <button type="button" onclick="abrirModalAfiliacion()" title="Hazte Asociado" 
-        class="flex items-center bg-green-700 text-white p-3 rounded-full shadow-xl hover:scale-105 hover:bg-brandGreen transition-all duration-300 group">
-        <span class="max-w-0 overflow-hidden whitespace-nowrap group-hover:max-w-xs transition-all duration-300 text-xs font-bold pl-1 group-hover:pr-2">
-          Afíliate Aquí
-        </span>
-        <img src="ImagenesCoopSansimon/logoAfiliación.png" alt="Afiliación" class="w-6 h-6 object-contain" onError="this.remove(); this.nextElementSibling.classList.remove('hidden');">
-        <i class="fa-solid fa-user-plus text-lg hidden"></i>
-      </button>
-      
-      <!-- Modal de Tratamiento de Datos Personales -->
-      <div id="modal-afiliacion" class="fixed inset-0 bg-black/60 z-[60] hidden flex items-center justify-center p-4 backdrop-blur-sm">
-        <div class="bg-white rounded-2xl shadow-2xl max-w-md w-full p-6 relative animate-fade-in border border-gray-100">
-          <button onclick="cerrarModalAfiliacion()" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600 transition">
-            <i class="fa-solid fa-xmark text-xl"></i>
+    <!-- Botón Afiliación -->
+    <button type="button" onclick="abrirModalAfiliacion()" title="Hazte Asociado" 
+      class="flex items-center bg-green-700 text-white p-3 rounded-full shadow-xl hover:scale-105 hover:bg-brandGreen transition-all duration-300 group">
+      <span class="max-w-0 overflow-hidden whitespace-nowrap group-hover:max-w-xs transition-all duration-300 text-xs font-bold pl-1 group-hover:pr-2">
+        Afíliate Aquí
+      </span>
+      <img src="ImagenesCoopSansimon/logoAfiliación.png" alt="Afiliación" class="w-6 h-6 object-contain" onError="this.remove(); this.nextElementSibling.classList.remove('hidden');">
+      <i class="fa-solid fa-user-plus text-lg hidden"></i>
+    </button>
+    
+    <!-- Modal de Tratamiento de Datos Personales -->
+    <div id="modal-afiliacion" class="fixed inset-0 bg-black/60 z-[60] hidden flex items-center justify-center p-4 backdrop-blur-sm">
+      <div class="bg-white rounded-2xl shadow-2xl max-w-md w-full p-6 relative animate-fade-in border border-gray-100">
+        <button onclick="cerrarModalAfiliacion()" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600 transition">
+          <i class="fa-solid fa-xmark text-xl"></i>
+        </button>
+        
+        <div class="text-center mb-4">
+          <div class="w-12 h-12 bg-green-100 text-brandGreen rounded-full flex items-center justify-center mx-auto mb-3 text-xl">
+            <i class="fa-solid fa-user-shield"></i>
+          </div>
+          <h3 class="text-lg font-bold text-gray-900">Tratamiento de Datos Personales</h3>
+        </div>
+        
+        <div class="text-xs text-gray-600 space-y-3 mb-5 max-h-48 overflow-y-auto p-3 bg-gray-50 rounded-lg border text-justify leading-relaxed">
+          <p>
+            En cumplimiento de la Ley 1581 de 2012 y el Decreto 1377 de 2013 de Protección de Datos Personales, la <strong>Cooperativa San Simón</strong> informa que los datos ingresados en el formulario de solicitud serán tratados con estricta confidencialidad para la validación y gestión de su afiliación.
+          </p>
+          <p>
+            Al continuar, autoriza expresamente el tratamiento de sus datos personales e información financiera para fines institucionales y de contacto comercial.
+          </p>
+        </div>
+
+        <div class="flex items-start mb-6">
+          <input id="check-habeas" type="checkbox" onchange="toggleBotonAfiliacion()" class="mt-0.5 w-4 h-4 text-brandGreen rounded border-gray-300 focus:ring-brandGreen cursor-pointer">
+          <label for="check-habeas" class="ml-2 text-xs font-medium text-gray-700 cursor-pointer select-none">
+            Acepto los términos y la política de tratamiento de datos personales.
+          </label>
+        </div>
+
+        <div class="flex gap-3">
+          <button onclick="cerrarModalAfiliacion()" class="w-1/2 py-2.5 px-4 border border-gray-300 rounded-lg text-gray-700 font-semibold text-sm hover:bg-gray-100 transition">
+            Cancelar
           </button>
-          
-          <div class="text-center mb-4">
-            <div class="w-12 h-12 bg-green-100 text-brandGreen rounded-full flex items-center justify-center mx-auto mb-3 text-xl">
-              <i class="fa-solid fa-user-shield"></i>
-            </div>
-            <h3 class="text-lg font-bold text-gray-900">Tratamiento de Datos Personales</h3>
-          </div>
-          
-          <div class="text-xs text-gray-600 space-y-3 mb-5 max-h-48 overflow-y-auto p-3 bg-gray-50 rounded-lg border text-justify leading-relaxed">
-            <p>
-              En cumplimiento de la Ley 1581 de 2012 y el Decreto 1377 de 2013 de Protección de Datos Personales, la <strong>Cooperativa San Simón</strong> informa que los datos ingresados en el formulario de solicitud serán tratados con estricta confidencialidad para la validación y gestión de su afiliación.
-            </p>
-            <p>
-              Al continuar, autoriza expresamente el tratamiento de sus datos personales e información financiera para fines institucionales y de contacto comercial.
-            </p>
-          </div>
-
-          <div class="flex items-start mb-6">
-            <input id="check-habeas" type="checkbox" onchange="toggleBotonAfiliacion()" class="mt-0.5 w-4 h-4 text-brandGreen rounded border-gray-300 focus:ring-brandGreen cursor-pointer">
-            <label for="check-habeas" class="ml-2 text-xs font-medium text-gray-700 cursor-pointer select-none">
-              Acepto los términos y la política de tratamiento de datos personales.
-            </label>
-          </div>
-
-          <div class="flex gap-3">
-            <button onclick="cerrarModalAfiliacion()" class="w-1/2 py-2.5 px-4 border border-gray-300 rounded-lg text-gray-700 font-semibold text-sm hover:bg-gray-100 transition">
-              Cancelar
-            </button>
-            <a id="btn-continuar-form" 
-              href="https://docs.google.com/forms/d/e/1FAIpQLSdf4RMGmZjvE4zRiZy5c8bPbKQ_G5ijD7-v3dHf5VVi38Vwzg/viewform" 
-              target="_blank" 
-              onclick="cerrarModalAfiliacion()" 
-              class="w-1/2 py-2.5 px-4 bg-gray-300 text-gray-500 rounded-lg font-semibold text-sm text-center pointer-events-none transition cursor-not-allowed">
-              Continuar
-            </a>
-          </div>
+          <a id="btn-continuar-form" 
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdf4RMGmZjvE4zRiZy5c8bPbKQ_G5ijD7-v3dHf5VVi38Vwzg/viewform" 
+            target="_blank" 
+            onclick="cerrarModalAfiliacion()" 
+            class="w-1/2 py-2.5 px-4 bg-gray-300 text-gray-500 rounded-lg font-semibold text-sm text-center pointer-events-none transition cursor-not-allowed">
+            Continuar
+          </a>
         </div>
       </div>
-
-      <!-- Botón Contacto -->
-      <a href="contacto.html" title="Contáctanos" 
-        class="flex items-center bg-brandBrown text-white p-3 rounded-full shadow-xl hover:scale-105 hover:bg-yellow-700 transition-all duration-300 group">
-        <span class="max-w-0 overflow-hidden whitespace-nowrap group-hover:max-w-xs transition-all duration-300 text-xs font-bold pl-1 group-hover:pr-2">
-          Contacto
-        </span>
-        <img src="ImagenesCoopSansimon/logoContacto.jpg" alt="Contacto" class="w-6 h-6 object-contain" onError="this.remove(); this.nextElementSibling.classList.remove('hidden');">
-        <i class="fa-solid fa-headset text-lg hidden"></i>
-      </a>
-
     </div>
 
-    <!-- Script de control de los botones flotantes -->
-      <script>
-        function abrirModalAfiliacion() {
-          document.getElementById('modal-afiliacion').classList.remove('hidden');
-        }
+    <!-- Botón Contacto -->
+    <a href="contacto.html" title="Contáctanos" 
+      class="flex items-center bg-brandBrown text-white p-3 rounded-full shadow-xl hover:scale-105 hover:bg-yellow-700 transition-all duration-300 group">
+      <span class="max-w-0 overflow-hidden whitespace-nowrap group-hover:max-w-xs transition-all duration-300 text-xs font-bold pl-1 group-hover:pr-2">
+        Contacto
+      </span>
+      <img src="ImagenesCoopSansimon/logoContacto.jpg" alt="Contacto" class="w-6 h-6 object-contain" onError="this.remove(); this.nextElementSibling.classList.remove('hidden');">
+      <i class="fa-solid fa-headset text-lg hidden"></i>
+    </a>
 
-        function cerrarModalAfiliacion() {
-          document.getElementById('modal-afiliacion').classList.add('hidden');
-          const check = document.getElementById('check-habeas');
-          if (check) check.checked = false;
-          toggleBotonAfiliacion();
-        }
+  </div>
 
-        function toggleBotonAfiliacion() {
-          const check = document.getElementById('check-habeas');
-          const btn = document.getElementById('btn-continuar-form');
-          
-          if (check.checked) {
-            btn.classList.remove('bg-gray-300', 'text-gray-500', 'pointer-events-none', 'cursor-not-allowed');
-            btn.classList.add('bg-brandGreen', 'text-white', 'hover:bg-green-800');
-          } else {
-            btn.classList.add('bg-gray-300', 'text-gray-500', 'pointer-events-none', 'cursor-not-allowed');
-            btn.classList.remove('bg-brandGreen', 'text-white', 'hover:bg-green-800');
-          }
-        }
-      </script>
+  <!-- Script de control de los botones flotantes -->
+  <script>
+    function abrirModalAfiliacion() {
+      document.getElementById('modal-afiliacion').classList.remove('hidden');
+    }
+
+    function cerrarModalAfiliacion() {
+      document.getElementById('modal-afiliacion').classList.add('hidden');
+      const check = document.getElementById('check-habeas');
+      if (check) check.checked = false;
+      toggleBotonAfiliacion();
+    }
+
+    function toggleBotonAfiliacion() {
+      const check = document.getElementById('check-habeas');
+      const btn = document.getElementById('btn-continuar-form');
+      
+      if (check.checked) {
+        btn.classList.remove('bg-gray-300', 'text-gray-500', 'pointer-events-none', 'cursor-not-allowed');
+        btn.classList.add('bg-brandGreen', 'text-white', 'hover:bg-green-800');
+      } else {
+        btn.classList.add('bg-gray-300', 'text-gray-500', 'pointer-events-none', 'cursor-not-allowed');
+        btn.classList.remove('bg-brandGreen', 'text-white', 'hover:bg-green-800');
+      }
+    }
+  </script>
 
 </body>
 </html>
