@@ -1,0 +1,46 @@
+Links de acceso, normatividad:
+
+<!-- Documento PDF 2 -->
+                <div class="flex items-center justify-between p-2.5 bg-gray-50 rounded-lg hover:bg-green-50 transition border border-gray-100">
+                <div class="flex items-center space-x-2.5 truncate pr-2">
+                    <i class="fa-solid fa-file-signature"></i>
+                    <span class="truncate font-medium text-gray-700">Estado del resultado <br> integral comparativo</span>
+                </div>
+                <a href="#" target="_blank" rel="noopener noreferrer" class="bg-brandGreen text-white px-2.5 py-1 rounded text-[11px] font-semibold hover:bg-green-800 transition flex items-center flex-shrink-0">
+                    <i class="fa-solid fa-download mr-1"></i> Abrir
+                </a>
+                </div>
+
+
+<!-- Documento PDF 3 -->
+                <div class="flex items-center justify-between p-2.5 bg-gray-50 rounded-lg hover:bg-green-50 transition border border-gray-100">
+                <div class="flex items-center space-x-2.5 truncate pr-2">
+                    <i class="fa-solid fa-file-pdf text-red-500 text-lg flex-shrink-0"></i>
+                    <span class="truncate font-medium text-gray-700">Estado del resultado <br> integral comparativo</span>
+                </div>
+                <a href="#" target="_blank" rel="noopener noreferrer" class="bg-brandGreen text-white px-2.5 py-1 rounded text-[11px] font-semibold hover:bg-green-800 transition flex items-center flex-shrink-0">
+                    <i class="fa-solid fa-download mr-1"></i> Abrir
+                </a>
+                </div>
+
+
+
+* Estatutos vigentes						- https://drive.google.com/file/d/1udne6WuWgmVpnmyMV0n8VCjQ1afcuKIR/view?usp=sharing
+* Informe de distribución de excedentes				- https://drive.google.com/file/d/1ooGPxE5R492GQIjFntfWi9n5YCBKQKOI/view?usp=sharing
+* Estados financieros:						- https://drive.google.com/file/d/1gGv_mz8VClml6XFSiMUthngAZrrdvtmx/view?usp=sharing
+* Informe de gestión:						- https://drive.google.com/file/d/1yTYbX9pxuubhqsmNKpAb1aN-JcXZjPL6/view?usp=sharing
+* Actas / Directivos:				
+	* Acta de constitución 					- https://drive.google.com/file/d/1Ifq4wghcDBucI7tDTXgDmp7NaTBLBnWx/view?usp=sharing
+	* Acta XXX asamblea general 2026			- https://drive.google.com/file/d/1rGArpaWwVdmOI175fQ4caK7fWRtZ_PUY/view?usp=sharing
+	* Certificación antecedentes miembros de dirección	- https://drive.google.com/file/d/1a4ofzn3aPfKzZ1M8pCTgITNgqefvoQ3J/view?usp=sharing
+	* Certificación remuneración directivos			- https://drive.google.com/file/d/1oSxQrZ6HZWSbkMUeip8ujr9L-w5f4XNP/view?usp=sharing
+	* Certificación cumplimiento requisitos numeral 13	- https://drive.google.com/file/d/1fvh8PdYishC4JyWeO13n0mbaHUL4Klcg/view?usp=sharing
+
+
+
+
+
+
+
+
+
