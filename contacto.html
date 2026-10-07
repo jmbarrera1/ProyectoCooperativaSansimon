@@ -147,22 +147,42 @@
           <!-- Nombre -->
           <div>
             <label for="nombre" class="block text-sm font-semibold text-gray-700 mb-1">Nombre Completo</label>
-            <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan Pérez" class="w-full px-4 py-2.5 border rounded-lg focus:outline-none focus:ring-2 focus:ring-brandGreen focus:border-transparent transition" required>
+            <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan Manuel Santos" 
+              class="w-full px-4 py-2.5 border rounded-lg focus:outline-none focus:ring-2 focus:ring-brandGreen focus:border-transparent transition" 
+              pattern="[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+" 
+              title="Solo se permiten letras y espacios."
+              minlength="3" maxlength="60"
+              oninput="this.value = this.value.replace(/[^a-zA-ZáéíóúÁÉÍÓÚñÑ\s]/g, '')"
+              required>
           </div>
           <!-- Cédula / Identificación -->
           <div>
             <label for="cedula" class="block text-sm font-semibold text-gray-700 mb-1">Número de Identificación</label>
-            <input type="text" id="cedula" name="cedula" placeholder="Ej. 123456789" class="w-full px-4 py-2.5 border rounded-lg focus:outline-none focus:ring-2 focus:ring-brandGreen focus:border-transparent transition">
+            <input type="text" id="cedula" name="cedula" placeholder="Ej. 1110760822" 
+              class="w-full px-4 py-2.5 border rounded-lg focus:outline-none focus:ring-2 focus:ring-brandGreen focus:border-transparent transition"
+              pattern="[0-9]+" 
+              title="Solo se permiten números."
+              minlength="5" maxlength="15"
+              oninput="this.value = this.value.replace(/[^0-9]/g, '')">
           </div>
           <!-- Teléfono -->
           <div>
             <label for="telefono" class="block text-sm font-semibold text-gray-700 mb-1">Teléfono de Contacto</label>
-            <input type="tel" id="telefono" name="telefono" placeholder="Ej. 300 000 0000" class="w-full px-4 py-2.5 border rounded-lg focus:outline-none focus:ring-2 focus:ring-brandGreen focus:border-transparent transition" required>
+            <input type="tel" id="telefono" name="telefono" placeholder="Ej. 310384756" 
+              class="w-full px-4 py-2.5 border rounded-lg focus:outline-none focus:ring-2 focus:ring-brandGreen focus:border-transparent transition" 
+              pattern="[0-9]{7,10}" 
+              title="Debe contener entre 7 y 10 dígitos numéricos."
+              minlength="7" maxlength="10"
+              oninput="this.value = this.value.replace(/[^0-9]/g, '')"
+              required>
           </div>
           <!-- Correo -->
           <div>
             <label for="email" class="block text-sm font-semibold text-gray-700 mb-1">Correo Electrónico</label>
-            <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" class="w-full px-4 py-2.5 border rounded-lg focus:outline-none focus:ring-2 focus:ring-brandGreen focus:border-transparent transition" required>
+            <input type="email" id="email" name="email" placeholder="JuanSantos@gmail.com" 
+              class="w-full px-4 py-2.5 border rounded-lg focus:outline-none focus:ring-2 focus:ring-brandGreen focus:border-transparent transition" 
+              maxlength="100"
+              required>
           </div>
         </div>
 
@@ -174,15 +194,22 @@
             <option value="afiliacion">Información de Afiliación</option>
             <option value="credito">Solicitud de Crédito</option>
             <option value="ahorro">Planes de Ahorro e Inversión</option>
+            <option value="peticion">Turismo y recreación</option>
             <option value="peticion">Petición, Queja o Reclamo (PQR)</option>
             <option value="otro">Otro</option>
           </select>
         </div>
-
+        
         <!-- Mensaje -->
         <div>
           <label for="mensaje" class="block text-sm font-semibold text-gray-700 mb-1">Mensaje</label>
-          <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe aquí tu consulta de forma detallada..." class="w-full px-4 py-2.5 border rounded-lg focus:outline-none focus:ring-2 focus:ring-brandGreen focus:border-transparent transition resize-none" required></textarea>
+          <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu consulta de forma detallada en este espacio..." 
+            class="w-full px-4 py-2.5 border rounded-lg focus:outline-none focus:ring-2 focus:ring-brandGreen focus:border-transparent transition resize-none" 
+            pattern="[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+"
+            title="Solo se permiten letras y espacios."
+            minlength="10" maxlength="1000"
+            oninput="this.value = this.value.replace(/[^a-zA-ZáéíóúÁÉÍÓÚñÑ\s,.]/g, '')"
+            required></textarea>
         </div>
 
         <!-- Botones de enviar - Cajas visuales del formulario -->
@@ -411,7 +438,7 @@
 
     </div>
 
-    <!-- Script de control de los botones flotantes -->
+    <!-- Script de control de los botones flotantes y el formulario -->
       <script>
         function abrirModalAfiliacion() {
           document.getElementById('modal-afiliacion').classList.remove('hidden');
@@ -436,7 +463,16 @@
             btn.classList.remove('bg-brandGreen', 'text-white', 'hover:bg-green-800');
           }
         }
-        // Script de funcionamiento para el formulario
+        
+        // Script de funcionamiento para el formulario con validación
+        function validarFormulario() {
+          const form = document.getElementById('formContacto');
+          if (!form.checkValidity()) {
+            form.reportValidity(); // Esto mostrará los mensajes nativos del navegador si falta algo o si el formato no coincide
+            return false;
+          }
+          return true;
+        }
 
         function obtenerDatosFormulario() {
           return {
@@ -450,21 +486,17 @@
         }
 
         function enviarPorWhatsApp() {
+          if (!validarFormulario()) return;
+          
           const d = obtenerDatosFormulario();
-          if (!d.nombre || !d.telefono || !d.mensaje) {
-            alert('Por favor completa los campos requeridos.');
-            return;
-          }
           const texto = `*Nombre:* ${d.nombre}\n*Cédula:* ${d.cedula}\n*Teléfono:* ${d.telefono}\n*Correo:* ${d.email}\n*Asunto:* ${d.asunto}\n*Mensaje:* ${d.mensaje}`;
           window.open(`https://api.whatsapp.com/send?phone=573204372502&text=${encodeURIComponent(texto)}`, '_blank');
         }
 
         function enviarPorCorreo() {
+          if (!validarFormulario()) return;
+          
           const d = obtenerDatosFormulario();
-          if (!d.nombre || !d.email || !d.mensaje) {
-            alert('Por favor completa los campos requeridos.');
-            return;
-          }
           const mailtoUrl = `mailto:correspondencia@coopsansimon.com?subject=${encodeURIComponent(d.asunto)}&body=${encodeURIComponent(`Nombre: ${d.nombre}\nCédula: ${d.cedula}\nTeléfono: ${d.telefono}\nCorreo: ${d.email}\n\nMensaje:\n${d.mensaje}`)}`;
           window.location.href = mailtoUrl;
         }
